@@ -1,0 +1,111 @@
+.faq-section {
+    width: 100%;
+}
+
+.faq-section h1{
+    text-align: center;
+    margin: 0;
+}
+
+  .faq-item {
+    list-style: none;
+    margin-bottom: 15px;
+  }
+
+  .faq-question {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 30px; /* Runder Rahmen */
+    border: 2px solid #ffffff; /* Gelber Rand wie im Menü */
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    transition: color 0.3s, background-color 0.3s;
+    text-align: left;
+  }
+
+  .faq-section ul {
+    padding: 0;
+  }
+
+  .faq-question:hover {
+    color: #f4c542; /* Gelbe Schrift beim Hover */
+  }
+
+  .faq-question::after {
+    content: '\25BC'; /* Pfeil nach unten */
+    position: absolute;
+    right: 15px;
+    font-size: 1.2em;
+    transition: transform 0.3s;
+  }
+
+  .faq-item.open .faq-question::after {
+    transform: rotate(180deg); /* Pfeil dreht nach oben */
+  }
+
+  .faq-answer {
+    display: none;
+    border: 2px solid #ffffff; /* Gelber Rand */
+    border-radius: 30px; /* Runder Rahmen */
+    padding: 15px;
+    color: white;
+    font-size: 1em;
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+
+  .helpline-list {
+
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    padding: 15px;
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .helpline-list ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .helpline-list li {
+    margin-bottom: 10px;
+  }
+
+  .helpline-list li a {
+    color: var(--yellow);
+    text-decoration: none;
+  }
+
+  .helpline-list li a:hover {
+    text-decoration: underline;
+  }
+
+  .video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:center;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+  }
+
+  h1 {
+font-size: 2rem;
+color: var(--yellow);
+}

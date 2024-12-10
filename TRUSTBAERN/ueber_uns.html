@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Trust Bärn</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-header">
+      <a href="index.html">
+        <img src="img/Logo_TrustBaern.svg" width="15%">
+      </a>
+    </div>
+
+    <div class="login-button">
+      <a href="login.html" class="button">Login</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Infos</a>
+        <ul>
+          <li class="dropdown"><a href="#">Ratgeber</a></li>
+        </ul>
+      </li>
+      <li><a class="aktiver_menuelink" href="ueber_uns.html">Über uns</a>
+        <ul>
+          <li class="dropdown"><a href="#partner">Partnerschaften</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Unterstützen</a>
+        <ul>
+          <li class="dropdown"><a href="#">Spenden</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="hamburger-menu">
+    <input type="checkbox" hidden id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span class="navicon"></span>
+    </label>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <div class="submenu">
+        <a href="#">Infos</a>
+        <div class="submenu-content">
+          <a href="#">FAQ</a>
+          <a href="#">Ratgeber</a>
+        </div>
+        <div onclick="showText" class="submenu">
+          <a href="#">Über uns</a>
+          <div class="submenu-content">
+            <a href="#">Partnerschaften</a>
+          </div>
+        </div>
+        <div class="submenu">
+          <a href="#">Unterstützen</a>
+          <div class="submenu-content">
+            <a href="#">Mitmachen</a>
+            <a href="#">Spenden</a>
+          </div>
+        </div>
+        <a href="#">Kontakt</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <main class="wrapper">
+    <article class="article ueber_uns center">
+      <h1>Wer sind wir?</h1>
+      <p>Wir sind TRUST BÄRN, ein junges Start-up aus Bern, das Menschen einen sicheren Heimweg ermöglicht.
+        Unsere Plattform bringt Nachtschwärmer:innen zusammen und bietet physische Begleitung durch verifizierte
+        Personen –
+        für mehr Sicherheit, Vertrauen und Gemeinschaft in der Stadt Bern.</p>
+    </article>
+
+    <article class="geschichte article ueber_uns center">
+      <h1>Geschichte</h1>
+      <p>Die Idee für TRUST BÄRN entstand 2023, als wir uns, Saskia, Marina, Jule, Cedi, Max und Ella –
+        berufstätig in Gastronomie, Sicherheit und Eventmanagement – nach Schichten regelmässig gemeinsam
+        auf den Heimweg machten. Dieses Ritual sprach sich herum, immer mehr Kolleg:innen schlossen sich an.
+        Aus dieser Initiative wuchs der Plan, ein Netzwerk zu schaffen, das Sicherheit und Zusammenhalt
+        für Nachtschwärmer:innen bietet. So entstand TRUST BÄRN, eine Plattform, die persönliche Begegnungen
+        und Schutz im nächtlichen Bern verbindet.</p>
+      <img src="img/illustration_geschichte.svg" alt="Geschichte">
+    </article>
+
+    <h1 id="team_ueberschrift">Team</h1>
+    <div class="team-grid">
+      <a href="mailto:saskia@trustbaern.ch" class="team-member">
+        <img src="img/saskia.jpg" alt="Team Member 1">
+        <h3>Saskia Lerf</h3>
+        <p>Marketing & Video</p>
+        <span class="mail_overlay">
+          <!-- <img class="mail_icon" src="img/mail.svg" alt="Mail"> -->
+        </span>
+      </a>
+      <a href="mailto:cedrian@trustbaern.ch" class="team-member">
+        <img src="img/cedi.png" alt="Team Member 2">
+        <h3>Cedrian Taku Enow</h3>
+        <p>Marketing</p>
+        <span class="mail_overlay">
+          <!-- <img class="mail_icon" src="img/mail.svg" alt="Mail"> -->
+        </span>
+      </a>
+      <a href="mailto:marina@trustbaern.ch" class="team-member">
+        <img src="img/marina.png" alt="Team Member 3">
+        <h3>Marina Lampert</h3>
+        <p>Kommunikation</p>
+        <span class="mail_overlay">
+          <!-- <img class="mail_icon" src="img/mail.svg" alt="Mail"> -->
+        </span>
+      </a>
+      <a href="mailto:jule@trustbaern.ch" class="team-member">
+        <img src="img/jule.jpg" alt="Team Member 4">
+        <h3>Jule</h3>
+        <p>Adminstration & HR</p>
+        <span class="mail_overlay">
+          <!-- <img class="mail_icon" src="img/mail.svg" alt="Mail"> -->
+        </span>
+      </a>
+      <a href="mailto:max@trustbaern.ch" class="team-member">
+        <img src="img/max.jpg" alt="Team Member 4">
+        <h3>Max</h3>
+        <p>Visuelle Gestaltung</p>
+        <span class="mail_overlay">
+          <!-- <img class="mail_icon" src="img/mail.svg" alt="Mail"> -->
+        </span>
+      </a>
+      <a href="mailto:ella@trustbaern.ch" class="team-member">
+        <img src="img/enna.png" alt="Team Member 4">
+        <h3>Ella</h3>
+  </span>      <p>Visuelle Gestaltung</p>
+        <span class="mail_overlay">
+          <!-- <img class="mail_icon" src="img/mail.svg" alt="Mail"> -->
+        </span>
+      </a>
+    </div>
+
+    
+
+    <h2 id="partner">Unsere Partner</h2>
+    <div class="grid">
+      <img class="logo" src="img/cafe-kairo-bern-logo.svg" alt="Partner 1 Logo">
+      <img class="logo" src="img/gaskessel_logo.svg" alt="Partner 2 Logo">
+      <img class="logo" src="img/logo_kanton_bern.svg" alt="Partner 3 Logo">
+      <img class="logo" src="img/logo_pyri_weiss.png" alt="Partner 4 Logo">
+      <img class="logo" src="img/logo_dachstock_weiss.png" alt="Partner 5 Logo">
+      <img class="logo" src="img/kapitel.png" alt="Partner 6 Logo">
+    </div>
+    <!-- Add more partner logos as needed -->
+  </main>
+
+
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>Über uns</h2>
+        <p>Trust Bärn ist eine Initiative zur Stärkung <br> der Gemeinschaft und Sicherheit in Bern.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Nützliche Links</h2>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">AGB</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2>Kontakt</h2>
+        <p>Email: info@trustbaern.ch</p>
+        <p>Telefon: +41 31 123 45 67</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Trust Bärn. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>

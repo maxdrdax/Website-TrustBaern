@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <meta charset="utf-8">
+  <title>Trust Bärn</title>
+</head>
+
+<body>
+ 
+  <header>
+    <div class="logo-header">
+      <a href="index.html">
+        <img src="img/Logo_TrustBaern.svg" width="15%">
+      </a>
+    </div>
+
+    <div class="login-button">
+      <a href="login.html" class="button">Login</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Infos</a>
+        <ul>
+          <li class="dropdown"><a href="#">Ratgeber</a></li>
+        </ul>
+      </li>
+      <li><a href="ueber_uns.html">Über uns</a>
+        <ul>
+          <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
+        </ul>
+      </li> 
+      <li><a href="#">Unterstützen</a>
+        <ul>
+          <li class="dropdown"><a href="#">Spenden</a></li>
+        </ul>
+      </li>
+      <li><a class="aktiver_menuelink" href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="hamburger-menu">
+    <input type="checkbox" hidden id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span class="navicon"></span>
+    </label>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <div class="submenu">
+        <a href="#">Infos</a>
+        <div class="submenu-content">
+          <a href="#">FAQ</a>
+          <a href="#">Ratgeber</a>
+        </div>
+      </div>
+      <div onclick="showText" class="submenu">
+        <a href="#">Über uns</a>
+        <div class="submenu-content">
+          <a href="#">Partnerschaften</a>
+        </div>
+      </div>
+      <div class="submenu">
+        <a href="#">Unterstützen</a>
+        <div class="submenu-content">
+          <a href="#">Mitmachen</a>
+          <a href="#">Spenden</a>
+        </div>
+      </div>
+      <a href="#">Kontakt</a>
+      <a href="#">Login</a>
+    </div>
+  </div>
+
+
+  <main class="wrapper">
+    <div class="contact-form">   
+      <h2 id="kontaktieren_ueberschrift">Kontaktiere uns</h2>
+      <form class="contact-container" action="#" method="post">
+        <input type="text" id="vorname" name="vorname" placeholder="Name/Vorname">
+
+        <input type="email" id="email" name="email" placeholder="E-Mail" required>
+
+        <input type="tel" id="telefon" name="telefon" placeholder="Telefon" required>
+        <input type="text" id="betreff" name="betreff" placeholder="Betreff">
+
+        <textarea id="nachricht" name="nachricht" placeholder="Nachricht" required></textarea>
+
+        <button class="submit-button" type="submit">Senden</button>
+      </form>
+    </div>
+
+  </main>
+  
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>Über uns</h2>
+        <p>Trust Bärn ist eine Initiative zur Stärkung <br> der Gemeinschaft und Sicherheit in Bern.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Nützliche Links</h2>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">AGB</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2>Kontakt</h2>
+        <p>Email: info@trustbaern.ch</p>
+        <p>Telefon: +41 31 123 45 67</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Trust Bärn. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div> -->
+
+</body>
+
+</html>
+
+
+<!--
+<aside> </aside>
+<details> </details>
+<figcaption> </figcaption>
+<figure> </figure>
+<footer> </footer>
+<header></header>
+<main> </main>
+<mark> </mark>
+<nav> </nav>
+<section> </section>
+<summary> </summary>
+<time> </time>
+-->

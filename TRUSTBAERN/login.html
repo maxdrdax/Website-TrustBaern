@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trust Bärn - FAQ</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-header">
+      <a href="index.html">
+        <img src="img/Logo_TrustBaern.svg" width="15%">
+      </a>
+    </div>
+    <div class="login-button">
+      <a href="login.html" class="button">Login</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="infos.html">Infos</a>
+        <ul>
+          <li class="dropdown"><a href="#ratgeber">Ratgeber</a></li>
+        </ul>
+      </li>
+      <li><a href="ueber_uns.html">Über uns</a>
+        <ul>
+          <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
+        </ul>
+      </li> 
+      <li><a href="unterstuetzen.html">Unterstützen</a>
+        <ul>
+          <li class="dropdown"><a href="#">Spenden</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrapper">
+    <div class="login-box">
+      <h1>Login</h1>
+      <form action="login-process.php" method="POST">
+        <div class="input-group">
+          <label for="username">Benutzername:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Passwort:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="submit-button-login">Einloggen</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>Über uns</h2>
+        <p>Trust Bärn ist eine Initiative zur Stärkung der Gemeinschaft und Sicherheit in Bern.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Nützliche Links</h2>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">AGB</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2>Kontakt</h2>
+        <p>Email: info@trustbaern.ch</p>
+        <p>Telefon: +41 31 123 45 67</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Trust Bärn. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const faqItem = question.parentElement;
+        faqItem.classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+
+</html>

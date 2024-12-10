@@ -1,0 +1,57 @@
+.wrapper {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  
+      .section {
+        margin-bottom: 30px;
+      }
+  
+      .helpline-list {
+  
+        border: 2px solid #ffffff;
+        border-radius: 30px;
+        padding: 15px;
+        color: white;
+        font-size: 1.2em;
+      }
+  
+      .helpline-list ul {
+        list-style: none;
+        padding: 0;
+      }
+  
+      .helpline-list li {
+        margin-bottom: 10px;
+      }
+  
+      .helpline-list li a {
+        color: var(--yellow);
+        text-decoration: none;
+      }
+  
+      .helpline-list li a:hover {
+        text-decoration: underline;
+      }
+  
+      .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content:center;
+      }
+  
+      .video-container iframe {
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
+        border-radius: 15px;
+        border: 2px solid #ffffff;
+      }
+  
+      h1 {
+    font-size: 2rem;
+    color: var(--yellow);
+  }

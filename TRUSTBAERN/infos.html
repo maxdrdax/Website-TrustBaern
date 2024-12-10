@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/infos.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trust Bärn - FAQ</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-header">
+      <a href="index.html">
+        <img src="img/Logo_TrustBaern.svg" width="15%">
+      </a>
+    </div>
+    <div class="login-button">
+      <a href="login.html" class="button">Login</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="aktiver_menuelink" href="infos.html">Infos</a>
+        <ul>
+          <li class="dropdown"><a href="infos.html#ratgeber">Ratgeber</a></li>
+        </ul>
+      </li>
+      <li><a href="ueber_uns.html">Über uns</a>
+        <ul>
+          <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
+        </ul>
+      </li> 
+      <li><a href="unterstuetzen.html">Unterstützen</a>
+        <ul>
+          <li class="dropdown"><a href="#">Spenden</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrapper">
+    <section class="faq-container">
+      <h1>Häufig gestellte Fragen (FAQ)</h1>
+      <ul class="faq-section">
+        <li class="faq-item">
+          <div class="faq-question">Wie funktioniert Trust Bärn?</div>
+          <div class="faq-answer">
+            <p>Trust Bärn ist eine Plattform, die Menschen zusammenbringt, um die Sicherheit in Bern zu fördern. Mit unserer App können Sie sich mit anderen Nutzern vernetzen und Unterstützung anfordern.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <div class="faq-question">Ist die Nutzung der Plattform kostenlos?</div>
+          <div class="faq-answer">
+            <p>Ja, die Basisfunktionen der Plattform sind für alle Nutzer kostenlos. Zusätzliche Funktionen können durch Spenden unterstützt werden.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <div class="faq-question">Wie kann ich der Community beitreten?</div>
+          <div class="faq-answer">
+            <p>Laden Sie einfach unsere App aus dem App Store oder Google Play Store herunter und registrieren Sie sich.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <div class="faq-question">Wie kann ich Trust Bärn unterstützen?</div>
+          <div class="faq-answer">
+            <p>Sie können uns durch freiwillige Mitarbeit oder Spenden unterstützen. Besuchen Sie die Seite <a href="#">Unterstützen</a> für weitere Informationen.</p>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <div class="faq-question">Wer steht hinter Trust Bärn?</div>
+          <div class="faq-answer">
+            <p>Trust Bärn ist eine Initiative engagierter Bürger, die sich für Gemeinschaft und Sicherheit in Bern einsetzen.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Helplines Section -->
+    <div class="section">
+      <h2 id="ratgeber">Helplines für ein sicheres Nach-Hause-Kommen</h2>
+      <div class="helpline-list">
+        <ul>
+          <li><strong>Notruf Polizei:</strong> <a href="tel:117">117</a></li>
+          <li><strong>Sanität:</strong> <a href="tel:144">144</a></li>
+          <li><strong>Frauen-Helpline:</strong> <a href="tel:0800160160">0800 16 01 60</a></li>
+          <li><strong>Heimwegtelefon:</strong> <a href="tel:03012074182">030 12074182</a></li>
+          <li><strong>Dargebotene Hand:</strong> <a href="tel:143">143</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Self-Defense Videos Section -->
+    <div class="section">
+      <h2>Selbstverteidigungsvideos</h2>
+      <div class="video-container">
+        <!-- YouTube Video 1 -->
+        <iframe src="https://www.youtube.com/embed/IyLv3vlJI94" allowfullscreen></iframe>
+        <!-- YouTube Video 2 -->
+        <iframe src="https://www.youtube.com/embed/h8hThR3SYz0" allowfullscreen></iframe>
+        <!-- YouTube Video 3 -->
+        <iframe src="https://www.youtube.com/embed/3KmdzFRAfqA" allowfullscreen></iframe>
+        <!-- YouTube Video 4 -->
+        <iframe src="https://www.youtube.com/embed/v1xkIndtIEw" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>Über uns</h2>
+        <p>Trust Bärn ist eine Initiative zur Stärkung der Gemeinschaft und Sicherheit in Bern.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Nützliche Links</h2>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">AGB</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2>Kontakt</h2>
+        <p>Email: info@trustbaern.ch</p>
+        <p>Telefon: +41 31 123 45 67</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Trust Bärn. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const faqItem = question.parentElement;
+        faqItem.classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+
+</html>

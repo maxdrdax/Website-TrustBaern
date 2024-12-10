@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Trust Bärn</title>
+</head>
+
+<body>
+ 
+  <header>
+    <div class="logo-header">
+      <a href="index.html">
+        <img src="img/Logo_TrustBaern.svg" width="15%">
+      </a>
+    </div>
+
+    <div class="login-button">
+      <a href="login.html" class="button">Login</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a class="aktiver_menuelink" href="index.html">Home</a></li>
+      <li><a href="infos.html">Infos</a>
+        <ul>
+          <li class="dropdown"><a href="infos.html#ratgeber">Ratgeber</a></li>
+        </ul>
+      </li>
+      <li><a href="ueber_uns.html">Über uns</a>
+        <ul>
+          <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
+        </ul>
+      </li> 
+      <li><a href="unterstuetzen.html">Unterstützen</a>
+        <ul>
+          <li class="dropdown"><a href="#">Spenden</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="hamburger-menu">
+    <input type="checkbox" hidden id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span class="navicon"></span>
+    </label>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <div class="submenu">
+        <a href="#">Infos</a>
+        <div class="submenu-content">
+          <a href="#">FAQ</a>
+          <a href="#">Ratgeber</a>
+        </div>
+      </div>
+      <div onclick="showText" class="submenu">
+        <a href="#">Über uns</a>
+        <div class="submenu-content">
+          <a href="#">Partnerschaften</a>
+        </div>
+      </div>
+      <div class="submenu">
+        <a href="#">Unterstützen</a>
+        <div class="submenu-content">
+          <a href="#">Mitmachen</a>
+          <a href="#">Spenden</a>
+        </div>
+      </div>
+      <a href="#">Kontakt</a>
+      <a href="#">Login</a>
+    </div>
+  </div>
+
+
+  <main class="wrapper">
+    
+    <div class="grid">
+      <!-- <p class="grid_text">1</p>
+      <p class="grid_text">2</p>
+      <p class="grid_text">3</p>
+      <p class="grid_text">4</p>
+      <p class="grid_text">5</p>
+      <p class="grid_text">6</p>
+      <p class="grid_text">7</p>
+      <p class="grid_text">8</p>
+      <p class="grid_text">9</p>
+      <p class="grid_text">10</p>
+      <p class="grid_text">11</p>
+      <p class="grid_text">12</p> -->
+
+
+      <article class="article left center">
+        <h1>Who is TrustBärn?</h1>
+        <p>Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum.</p>
+      </article>
+
+      <img class="illustration_rechts" src="img/hand.svg" alt="Smartphone">
+
+      <article class="article left">
+        <h1>TrustBärn Map</h1>
+        <img src="img/map.svg" alt="Karte">
+      </article>
+
+      <article class="article right cta">
+        <p>Our Platform will always keep you in good company,when walking Home at night!
+          <br>
+          <br>
+          Get the App and join our Community</p>
+          <br>
+          <a href="https://www.apple.com/app-store/"><img src="img/apple_badge.svg" alt="Zum Apple Store"></a>
+          <a href="https://play.google.com/store/apps?pli=1"><img src="img/google_play_badge.png" alt="Zum Google Play Store"></a>
+      </article>
+
+    </div>
+
+  </main>
+  
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>Über uns</h2>
+        <p>Trust Bärn ist eine Initiative zur Stärkung <br> der Gemeinschaft und Sicherheit in Bern.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Nützliche Links</h2>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">AGB</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2>Kontakt</h2>
+        <p>Email: info@trustbaern.ch</p>
+        <p>Telefon: +41 31 123 45 67</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Trust Bärn. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div> -->
+
+</body>
+
+</html>
+
+
+<!--
+<aside> </aside>
+<details> </details>
+<figcaption> </figcaption>
+<figure> </figure>
+<footer> </footer>
+<header></header>
+<main> </main>
+<mark> </mark>
+<nav> </nav>
+<section> </section>
+<summary> </summary>
+<time> </time>
+-->
