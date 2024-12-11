@@ -3,6 +3,8 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ueber_uns.css">
+  <link rel="stylesheet" href="css/infos.css">
   <meta charset="utf-8">
   <title>Trust Bärn</title>
 </head>
@@ -24,17 +26,14 @@
   <nav>
     <ul class="menu">
       <li><a href="index.html">Home</a></li>
-      <li><a href="#">Infos</a>
-        <ul>
-          <li class="dropdown"><a href="#">Ratgeber</a></li>
-        </ul>
+      <li><a href="infos.html">Infos</a>
       </li>
       <li><a class="aktiver_menuelink" href="ueber_uns.html">Über uns</a>
         <ul>
-          <li class="dropdown"><a href="#partner">Partnerschaften</a></li>
+          <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
         </ul>
       </li>
-      <li><a href="#">Unterstützen</a>
+      <li><a href="unterstuetzen.html">Unterstützen</a>
         <ul>
           <li class="dropdown"><a href="#">Spenden</a></li>
         </ul>
@@ -81,7 +80,8 @@
 
 
   <main class="wrapper">
-    <article class="article ueber_uns center">
+    <div class="infos infos-container">
+    <article class="article ueber_uns">
       <h1>Wer sind wir?</h1>
       <p>Wir sind TRUST BÄRN, ein junges Start-up aus Bern, das Menschen einen sicheren Heimweg ermöglicht.
         Unsere Plattform bringt Nachtschwärmer:innen zusammen und bietet physische Begleitung durch verifizierte
@@ -89,7 +89,7 @@
         für mehr Sicherheit, Vertrauen und Gemeinschaft in der Stadt Bern.</p>
     </article>
 
-    <article class="geschichte article ueber_uns center">
+    <article class="article geschichte">
       <h1>Geschichte</h1>
       <p>Die Idee für TRUST BÄRN entstand 2023, als wir uns, Saskia, Marina, Jule, Cedi, Max und Ella –
         berufstätig in Gastronomie, Sicherheit und Eventmanagement – nach Schichten regelmässig gemeinsam
@@ -97,8 +97,10 @@
         Aus dieser Initiative wuchs der Plan, ein Netzwerk zu schaffen, das Sicherheit und Zusammenhalt
         für Nachtschwärmer:innen bietet. So entstand TRUST BÄRN, eine Plattform, die persönliche Begegnungen
         und Schutz im nächtlichen Bern verbindet.</p>
-      <img src="img/illustration_geschichte.svg" alt="Geschichte">
+        <img src="img/illustration_geschichte.svg" alt="Geschichte">
     </article>
+  </div>
+
 
     <h1 id="team_ueberschrift">Team</h1>
     <div class="team-grid">
@@ -143,16 +145,17 @@
         </span>
       </a>
       <a href="mailto:ella@trustbaern.ch" class="team-member">
-        <img src="img/enna.png" alt="Team Member 4">
+        <img src="img/ella.jpg" alt="Team Member 4">
         <h3>Ella</h3>
-  </span>      <p>Visuelle Gestaltung</p>
+        </span>
+        <p>Visuelle Gestaltung</p>
         <span class="mail_overlay">
           <!-- <img class="mail_icon" src="img/mail.svg" alt="Mail"> -->
         </span>
       </a>
     </div>
 
-    
+
 
     <h2 id="partner">Unsere Partner</h2>
     <div class="grid">

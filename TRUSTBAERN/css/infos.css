@@ -1,10 +1,26 @@
-.faq-section {
-    width: 100%;
+.infos-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;  
+  width: 100%;
+  grid-column-gap: 3em;
+  grid-row-gap: 5em;
+  vertical-align: top;
+  margin-bottom: 3em;
 }
 
-.faq-section h1{
-    text-align: center;
-    margin: 0;
+.faq-section {
+    grid-column: 1 / 9;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+}
+
+.infos-container h1 {
+    text-align: left;
+    vertical-align: top;
+    margin: 0  0 1.5em 0;
+    padding: 0;
 }
 
   .faq-item {
@@ -16,16 +32,12 @@
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 30px; /* Runder Rahmen */
-    border: 2px solid #ffffff; /* Gelber Rand wie im Menü */
+    border: 1px solid #ffffff; /* Gelber Rand wie im Menü */
     color: white;
     font-size: 1.2em;
     position: relative;
     transition: color 0.3s, background-color 0.3s;
     text-align: left;
-  }
-
-  .faq-section ul {
-    padding: 0;
   }
 
   .faq-question:hover {
@@ -46,7 +58,7 @@
 
   .faq-answer {
     display: none;
-    border: 2px solid #ffffff; /* Gelber Rand */
+    border: 1px solid #ffffff; /* Gelber Rand */
     border-radius: 30px; /* Runder Rahmen */
     padding: 15px;
     color: white;
@@ -59,13 +71,16 @@
     display: block;
   }
 
-  .section {
+  .helpline {
     margin-bottom: 30px;
+    grid-column: 9 / 13;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .helpline-list {
-
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     border-radius: 30px;
     padding: 15px;
     color: white;
@@ -75,6 +90,7 @@
   .helpline-list ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
 
   .helpline-list li {
@@ -93,19 +109,19 @@
   .video-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content:center;
+    gap: 2em;
+    margin: 0;
   }
 
   .video-container iframe {
     width: 100%;
     max-width: 400px;
-    height: 250px;
+    height: 15em;
     border-radius: 15px;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
   }
 
-  h1 {
-font-size: 2rem;
-color: var(--yellow);
-}
+  .video-container iframe:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }

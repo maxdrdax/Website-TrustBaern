@@ -180,6 +180,7 @@ nav ul li:hover ul {
 h1 {
   font-size: 2rem;
   color: var(--yellow);
+  margin-top: 0;
 }
 
 .illustration_rechts {
@@ -190,20 +191,15 @@ h1 {
 .article {
   border: 1px solid white;
   border-radius: 25px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px em 10px 20px;
   height: fit-content;
-}
-
-.left,
-.right {
   background: rgba(0, 0, 0, 0.2);
+  padding: 2em;
 }
 
 .left {
   grid-column: 1/9;
 }
-
-
 
 .center {
   margin: 0 auto;
@@ -234,117 +230,6 @@ h1 {
   display: block;
   margin: 1em auto;
 }
-
-/* Ueber uns */
-
-.ueber_uns {
-  width: 50%;
-  margin-bottom: 5em;
-}
-
-#team_ueberschrift {
-  margin-bottom: 2em;
-  text-align: center;
-}
-
-.geschichte img {
-  margin: 1em 0 0 0;
-}
-
-#partner {
-  margin-top: 5em;
-  text-align: center;
-  color: var(--yellow);
-}
-
-.team-grid {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 31.25% 31.25% 31.25%;
-  grid-template-rows: 30vw;
-  grid-column-gap: 3%;
-  grid-row-gap: 3%;
-  vertical-align: center;
-}
-
-.team-member {
-  position: relative;
-  text-align: center;
-  padding: 10px;
-  border: inline;
-  border: 1px solid var(--lightblue);
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.1);
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.team-member img {
-  width: 90%;
-  height: 80%;
-  object-fit: cover;
-  margin-top: 1em;
-}
-
-.team-member h3 {
-  font-size: 1.2rem;
-  color: var(--yellow);
-  margin-bottom: 0;
-}
-
-.team-member p {
-  font-size: 1rem;
-  color: var(--lightblue);
-  margin: 0.5em 0 0 0;
-}
-
-.team-grid a {
-  text-decoration: none;
-}
-
-.team-member:hover .mail_overlay {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(226, 55, 127, 0.5);
-  box-sizing: border-box;
-  backface-visibility: hidden;
-  transition: all 0.5s ease;
-  border-radius: 10px;
-}
-
-/* .team-member:hover .mail_icon {
-  width: 15%;
-  height: auto;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  opacity: 0;
-} */
-
-.team-member:hover {
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--yellow);
-}
-
-.logo {
-  grid-column: span 2;
-  max-width: 65%;
-  max-height: 100%;
-  margin: auto auto;
-  grid-row-start: 3;
-}
-
 
 
 /* Footer stylen */
