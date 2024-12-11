@@ -44,6 +44,7 @@ body {
   color: var(--lightblue); /* Farbe für Text */
   background-repeat: repeat;
   font-family: 'Dm Mono Light'; /* Alles im Body hat diesen Font */
+  background-color: var(--blue);
 }
 
 a { /* a=Alles Sachen die mit Links zu tun haben. href ist ein attribut davon*/
@@ -255,7 +256,7 @@ footer {
 }
 
 .footer-section {
-  min-width: 300px;         /* Legt die minimale Breite des Elements auf 300px fest */
+  min-width: 300px;        /* Legt die minimale Breite des Elements auf 300px fest */
   margin: 10px;             /* Fügt einen Abstand von 10px rund um das Element hinzu */
   justify-content: center;  /* Zentriert die Flex-Elemente entlang der Hauptachse */
 }
@@ -445,4 +446,7 @@ footer {
     grid-column: 1/13;
     width: 100%;
   }
+  .footer-section {
+    min-width: 10px ;
+}
 }
