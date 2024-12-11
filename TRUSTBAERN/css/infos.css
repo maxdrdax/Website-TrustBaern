@@ -1,33 +1,35 @@
-.infos-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;  
+.infos-container { 
+  display: grid;/* Legt fest, dass das Element .infos-container ein CSS Grid-Container ist. Innerhalb dieses Containers können Inhalte (Kinder-Elemente) in einem Raster organisiert werden. */
+  grid-template-columns: repeat(12, 1fr); /* Definiert die Spaltenstruktur des Grids: Das Grid hat 12 gleich breite Spalten 1fr steht für eine proportionale Einheit des verfügbaren Platzes (Fractional Unit). Alle 12 Spalten teilen sich den Platz gleichmäßig. wenn man individuell möchte, dann repeat weg und prozent zahlenb nacheinander mit Leerschlag . */
+  grid-template-rows: auto;  /* Definiert die Reihenstruktur des Grids: Jede Zeile passt sich automatisch (auto) der Höhe ihres Inhalts an. */
   width: 100%;
-  grid-column-gap: 3em;
-  grid-row-gap: 5em;
-  vertical-align: top;
-  margin-bottom: 3em;
+  grid-column-gap: 3em; /* Legt den horizontalen Abstand (Zwischenraum) zwischen den Spalten des Grids auf */
+  grid-row-gap: 5em;/* Legt den vertikalen Abstand (Zwischenraum) zwischen den Reihen des Grids auf 5em fest. */
+  margin-bottom: 3em;/*  Fügt einen Abstand von 3em unterhalb des Containers hinzu. Dadurch entsteht ein Abstand zum nächsten Element unter dem .infos-container. */
 }
+
 
 .faq-section {
-    grid-column: 1 / 9;
-    width: 100%;
-    padding: 0;
-    margin-top: 0;
+    grid-column: 1 / 9; /* Gibt an, dass das .faq-section-Element im übergeordneten Grid-Container die Spalten von 1 bis 9 belegt. */
+    width: 100%; /* 100% der 1-9 Spalten */
+    padding: 0; /* Kein Padding */
+    margin-top: 0;/* Oben kein Margin */
 }
 
+
 .infos-container h1 {
-    text-align: left;
-    vertical-align: top;
-    margin: 0  0 1.5em 0;
+    text-align: left; /* Richtet den Text des <h1>-Elements links aus. */
+    vertical-align: top; /* Oben im Container */
+    margin: 0  0 1.5em 0; /* auf jeder Seite, beginnend mit oben und dann im Uhrzeigersinn */
     padding: 0;
 }
 
   .faq-item {
-    list-style: none;
-    margin-bottom: 15px;
+    list-style: none;  /* Standardmäßig würden <li>-Elemente Punkte oder andere Listensymbole anzeigen. */
+    margin-bottom: 15px; 
   }
-
+ 
+ 
   .faq-question {
     padding: 10px 15px;
     cursor: pointer;

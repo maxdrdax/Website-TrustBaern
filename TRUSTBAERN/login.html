@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/login.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trust Bärn - FAQ</title>
+  <link rel="stylesheet" href="css/style.css">      <!-- Verknüpft die CSS-Datei 'style.css' -->
+  <link rel="stylesheet" href="css/login.css">       <!-- Verknüpft eine weitere CSS-Datei 'login.css' -->
+  <meta charset="utf-8">                             <!-- Definiert den Zeichensatz als UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stellt sicher, dass die Seite auf mobilen Geräten korrekt skaliert wird -->
+  <title>Trust Bärn - FAQ</title>                    <!-- Der Titel der Seite, der im Browser-Tab angezeigt wird -->
 </head>
+
 
 <body>
 
@@ -32,31 +33,30 @@
           <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
         </ul>
       </li>
-      <li><a href="unterstuetzen.html">Unterstützen</a>
-        <ul>
-          <li class="dropdown"><a href="#">Spenden</a></li>
-        </ul>
+      <li><a href="aktuelles.html">Aktuelles</a>
       </li>
       <li><a href="contact.html">Kontakt</a></li>
     </ul>
   </nav>
 
-  <main class="wrapper">
-    <div class="login-box">
-      <h1>Login</h1>
-      <form action="login-process.php" method="POST">
-        <div class="input-group">
-          <label for="username">Benutzername:</label>
-          <input type="text" id="username" name="username" required>
+  <main class="wrapper">                                                <!-- Der Hauptbereich der Seite, wird durch die Klasse 'wrapper' gestylt -->
+   <div class="login-box">                                              <!-- Container für das Login-Formular -->
+     <h1>Login</h1>                                                     <!-- Titel des Login-Formulars -->
+   <form action="login-process.php" method="POST">                      <!-- Das Formular, das die Benutzerdaten an 'login-process.php' sendet. Die Methode 'POST' bedeutet, dass die Daten sicher übermittelt werden -->
+     <div class="input-group">                                          <!-- Container für das Eingabefeld für den Benutzernamen -->
+        <label for="username">Benutzername:</label>                     <!-- Beschriftung des Eingabefeldes für den Benutzernamen -->
+          <input type="text" id="username" name="username" required>    <!-- Eingabefeld für den Benutzernamen. 'required' bedeutet, dass dieses Feld ausgefüllt werden muss -->
         </div>
-        <div class="input-group">
-          <label for="password">Passwort:</label>
-          <input type="password" id="password" name="password" required>
+     <div class="input-group">                                          <!-- Container für das Eingabefeld für das Passwort -->
+          <label for="password">Passwort:</label>                       <!-- Beschriftung des Eingabefeldes für das Passwort -->
+          <input type="password" id="password" name="password" required><!-- Eingabefeld für das Passwort. 'required' bedeutet, dass dieses Feld ebenfalls ausgefüllt werden muss -->
         </div>
-        <button type="submit" class="submit-button-login">Einloggen</button>
+      <button type="submit" class="submit-button-login">Einloggen</button>  <!-- Der Absenden-Button für das Formular, der mit der Klasse 'submit-button-login' gestylt ist -->
       </form>
     </div>
+  
   </main>
+  
 
   <footer>
     <div class="footer-content">

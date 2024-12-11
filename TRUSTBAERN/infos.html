@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/infos.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trust Bärn - FAQ</title>
+  <title>Trust Bärn - FAQ</title> <!-- Wird im Tab so angezeigt -->
 </head>
 
 <body>
 
-  <header>
+  <header> <!-- Gleiches wie auf Index Seite -->
     <div class="logo-header">
       <a href="index.html">
         <img src="img/Logo_TrustBaern.svg" width="15%">
@@ -22,9 +22,9 @@
     </div>
   </header>
 
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
+  <nav> <!-- Gleiches wie auf Index Seite -->
+    <ul class="menu"> 
+      <li><a href="index.html">Home</a></li> 
       <li><a class="aktiver_menuelink" href="infos.html">Infos</a>
       </li>
       <li><a href="ueber_uns.html">Über uns</a>
@@ -32,27 +32,25 @@
           <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
         </ul>
       </li>
-      <li><a href="unterstuetzen.html">Unterstützen</a>
-        <ul>
-          <li class="dropdown"><a href="#">Spenden</a></li>
-        </ul>
+      <li><a href="aktuelles.html">Aktuelles</a>
       </li>
       <li><a href="contact.html">Kontakt</a></li>
     </ul>
   </nav>
 
-  <main class="wrapper">
-    <section class="infos-container">
-      <ul class="faq-section">
-        <h1>Häufig gestellte Fragen (FAQ)</h1>
-        <li class="faq-item">
+  <main class="wrapper"> <!-- Main ist zwischen Header und Footer, wrapper ist die Klasse um im CSS Responsiveness zu machen -->
+    <section class="infos-container"> <!-- gruppiert Inhalte, die thematisch zusammengehören -->
+      <ul class="faq-section"> <!--   Diese Liste enthält die FAQ-Einträge (jede Frage und ihre Antwort). -->
+        <h1>Häufig gestellte Fragen (FAQ)</h1>    
+        <li class="faq-item"> <!-- Jedes FAQ-Element ist ein Listeneintrag (<li>), der die Klasse faq-item trägt. Jeder Eintrag (li) in der (ul) hat eine Frage und Antwort-->
           <div class="faq-question">Wie funktioniert Trust Bärn?</div>
           <div class="faq-answer">
             <p>Trust Bärn ist eine Plattform, die Menschen zusammenbringt, um die Sicherheit in Bern zu fördern. Mit unserer App können Sie sich mit anderen Nutzern vernetzen und Unterstützung anfordern.</p>
           </div>
         </li>
-
-        <li class="faq-item">
+   
+      
+        <li class="faq-item"> 
           <div class="faq-question">Ist die Nutzung der Plattform kostenlos?</div>
           <div class="faq-answer">
             <p>Ja, die Basisfunktionen der Plattform sind für alle Nutzer kostenlos. Zusätzliche Funktionen können durch Spenden unterstützt werden.</p>
@@ -83,10 +81,10 @@
 
       <!-- Helplines Section -->
     <div class="helpline">
-      <h1 id="ratgeber">Helplines</h1>
+      <h1>Helplines</h1> 
       <div class="helpline-list">
         <ul>
-          <li><strong>Notruf Polizei:</strong> <a href="tel:117">117</a></li>
+          <li><strong>Notruf Polizei:</strong> <a href="tel:117">117</a></li>  <!-- Strong = Bold -->
           <li><strong>Sanität:</strong> <a href="tel:144">144</a></li>
           <li><strong>Frauen-Helpline:</strong> <a href="tel:0800160160">0800 16 01 60</a></li>
           <li><strong>Heimwegtelefon:</strong> <a href="tel:03012074182">030 12074182</a></li>
@@ -104,7 +102,7 @@
       <h1>Selbstverteidigungsvideos</h1>
       <div class="video-container">
         <!-- YouTube Video 1 -->
-        <iframe src="https://www.youtube.com/embed/IyLv3vlJI94" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/IyLv3vlJI94" allowfullscreen></iframe>  <!-- wird verwendet, um externe Inhalte (in diesem Fall Videos von YouTube) direkt auf einer Webseite anzuzeigen.ermöglicht es den Nutzern, das Video im Vollbildmodus anzusehen. Ohne dieses Attribut wäre die Vollbildoption deaktiviert. -->
         <!-- YouTube Video 3 -->
         <iframe src="https://www.youtube.com/embed/3KmdzFRAfqA" allowfullscreen></iframe>
         <!-- YouTube Video 4 -->
@@ -112,7 +110,7 @@
       </div>
     </div>
   </section>
-
+  
   </main>
 
   <footer>
@@ -140,7 +138,8 @@
     </div>
   </footer>
 
-  <script>
+  <!-- Drop Down Funktion FAQ, das ist Java Script! -->
+  <script> 
     document.querySelectorAll('.faq-question').forEach(question => {
       question.addEventListener('click', () => {
         const faqItem = question.parentElement;

@@ -1,0 +1,143 @@
+/* .container_blog_post {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 20vw 20vw;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  width: 100%;
+}
+
+.container_blog_post h2{
+  margin-bottom: 0;
+}
+
+.blog_post {    
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.blog_post img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.grosse_nachricht {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    height: 100%;
+    width: 100%;
+}
+
+.bild {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.date {
+  float: right;
+  margin: 0;
+}
+
+.text-overlay {
+  color: var(--blue);
+  position: absolute;
+  bottom: 10em;
+  left: 1rem
+}
+
+.rubrik, .datum {
+  font-size: 1rem;
+  background-color: var(--yellow);
+  padding: 10px 5px 10px 5px;
+  display: inline;
+  font-weight: 500;
+}
+
+.titel {
+  font-size: 1.5rem;
+  background-color: var(--yellow);
+  padding: 10px 5px 10px 5px;
+  font-weight: 500;
+  margin-top: 15px;
+} */
+
+.alle_nachrichten {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  grid-auto-rows: 15vw;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 100%;
+}
+
+.grosse_nachricht,
+.kleine_nachricht,
+.grosse_nachricht_vertikal {
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.grosse_nachricht {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  /* Erste Zahl -> wo soll Element beginnen
+  2. Zahl wo soll es aufhören, nach Gitterlinien!*/
+}
+
+.grosse_nachricht_vertikal {
+  height: auto;
+  grid-column: 4;
+  grid-row: 1/3;
+}
+
+.grosses_bild {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.zwei_ueberschriften {
+  color: white;
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1rem
+}
+
+.kategorie {
+  font-size: 1rem;
+  background-color: var(--pink);
+  padding: 10px 5px 10px 5px;
+  display: inline;
+  font-weight: 500;
+}
+
+.titel {
+  font-size: 1.5rem;
+  background-color: var(--pink);
+  padding: 10px 5px 10px 5px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.grosse_nachricht,
+.grosse_nachricht_vertikal,
+.kleine_nachricht {
+  transition: border-width 1s ease, border-width 1s ease;
+}
+
+.grosse_nachricht:hover,
+.grosse_nachricht_vertikal:hover,
+.kleine_nachricht:hover {
+  border: 10px solid var(--pink);
+}
+
+

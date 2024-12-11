@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aktuelles.css">
+  <meta charset="utf-8">
+  <title>Trust Bärn</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-header">
+      <a href="index.html">
+        <img src="img/Logo_TrustBaern.svg" width="15%">
+      </a>
+    </div>
+
+    <div class="login-button">
+      <a href="login.html" class="button">Login</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="infos.html">Infos</a>
+      </li>
+      <li><a href="ueber_uns.html">Über uns</a>
+        <ul>
+          <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
+        </ul>
+      </li>
+      <li><a class="aktiver_menuelink" href="aktuelles.html">Aktuelles</a>
+      </li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="hamburger-menu">
+    <input type="checkbox" hidden id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <span class="navicon"></span>
+    </label>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <div class="submenu">
+        <a href="#">Infos</a>
+        <div class="submenu-content">
+          <a href="#">FAQ</a>
+          <a href="#">Ratgeber</a>
+        </div>
+      </div>
+      <div onclick="showText" class="submenu">
+        <a href="#">Über uns</a>
+        <div class="submenu-content">
+          <a href="#">Partnerschaften</a>
+        </div>
+      </div>
+      <div class="submenu">
+        <a href="#">Unterstützen</a>
+        <div class="submenu-content">
+          <a href="#">Mitmachen</a>
+          <a href="#">Spenden</a>
+        </div>
+      </div>
+      <a href="#">Kontakt</a>
+      <a href="#">Login</a>
+    </div>
+  </div>
+
+
+  <main class="wrapper">
+
+    <!-- <div class="container_blog_post">
+      <article class="blog_post">
+        <a href="#">
+          <img class="bild" src="img/bern_nacht.jpg" alt="Beleuchtung Bern in der Nacht">
+        </a>
+        <div class="text-overlay">
+          <p class="rubrik">Rubrik</p>
+          <p class="datum">Datum</p>
+          <h2 class="titel">Titel Blog Post</h1>
+        </div>
+      </article>
+
+      <article class="blog_post grosse_nachricht">
+        <img src="img/kriminalitaet.jpg" alt="Beleuchtung Bern in der Nacht">
+        <p class="rubrik">Rubrik</p>
+        <p class="datum">Datum</p>
+        <h2 class="titel">Titel Blog Post</h1>
+      </article>
+
+      <article class="blog_post">
+        <img src="img/bern_nacht.jpg" alt="Beleuchtung Bern in der Nacht">
+        <p class="inline">Rubrik</p>
+        <p class="inline date">Datum</p>
+        <h2>Titel Blog Post</h1>
+      </article>
+
+
+      <article class="blog_post">
+        <img src="img/bern_nacht.jpg" alt="Beleuchtung Bern in der Nacht">
+        <p class="inline">Rubrik</p>
+        <p class="inline date">Datum</p>
+        <h2>Titel Blog Post</h1>
+      </article>
+    </div> -->
+
+    <main>
+      <div class="alle_nachrichten">
+          <article class="kleine_nachricht">
+              <a href="#">
+                  <img class="grosses_bild" src="img/bern_nacht.jpg" alt="nachricht 1">
+              </a>
+              <div class="zwei_ueberschriften">
+                  <h3 class="kategorie">Lernen</h3>
+                  <h2 class="titel">Interne Weiterbildung: Flipchart-Training</h2>
+              </div>
+          </article>
+
+          <article class="grosse_nachricht">
+            <a href="#">
+                <img class="grosses_bild" src="img/bern_nacht.jpg" alt="nachricht 3">
+            </a>
+            <div class="zwei_ueberschriften">
+                <h3 class="kategorie">Arbeit</h3>
+                <h2 class="titel">Offene Stelle: Studentische Hilfskräfte am Standort Zürich</h2>
+            </div>
+        </article>
+
+          <article class="kleine_nachricht">
+              <a href="#">
+                  <img class="grosses_bild" src="img/bern_nacht.jpg" alt="nachricht 2">
+              </a>
+              <div class="zwei_ueberschriften">
+                  <h3 class="kategorie">Velo</h3>
+                  <h2 class="titel">Trailcenter Thusis: MTB-Einführungskurs</h2>
+              </div>
+          </article>
+
+          <article class="kleine_nachricht">
+              <a href="#">
+                  <img class="grosses_bild" src="img/bern_nacht.jpg" alt="nachricht 4">
+              </a>
+              <div class="zwei_ueberschriften">
+                  <h3 class="kategorie">Reinigung</h3>
+                  <h2 class="titel">Reminder: Fensterreinigung</h2>
+              </div>
+          </article>
+
+          <article class="grosse_nachricht_vertikal">
+              <a href="#">
+                  <img class="grosses_bild" src="img/bern_nacht.jpg" alt="nachricht 5">
+              </a>
+              <div class="zwei_ueberschriften">
+                  <h3 class="kategorie">Lernen</h3>
+                  <h2 class="titel">Freie Plätze für ENSA Kurs im Mai</h2>
+              </div>
+          </article>
+
+          <article class="kleine_nachricht">
+              <a href="#">
+                  <img class="grosses_bild" src="img/bern_nacht.jpg" alt="nachricht 6">
+              </a>
+              <div class="zwei_ueberschriften">
+                  <h3 class="kategorie">Bibliothek</h3>
+                  <h2 class="titel">Feedback zur Bibliothek? Ja gerne.</h2>
+              </div>
+          </article>
+
+          <article class="kleine_nachricht">
+              <a href="#">
+                  <img class="grosses_bild" src="img/bern_nacht.jpg" alt="nachricht 7">
+              </a>
+              <div class="zwei_ueberschriften">
+                  <h3 class="kategorie">Sport</h3>
+                  <h2 class="titel">Sportmanagement inside</h2>
+              </div>
+          </article>
+      </div>
+  </main>
+
+  </main>
+
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h2>Über uns</h2>
+        <p>Trust Bärn ist eine Initiative zur Stärkung <br> der Gemeinschaft und Sicherheit in Bern.</p>
+      </div>
+      <div class="footer-section">
+        <h2>Nützliche Links</h2>
+        <ul>
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+          <li><a href="#">AGB</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2>Kontakt</h2>
+        <p>Email: info@trustbaern.ch</p>
+        <p>Telefon: +41 31 123 45 67</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Trust Bärn. Alle Rechte vorbehalten.</p>
+    </div>
+    <div class="logos-socialmedia">
+      <img src="img/instagram _logo.avif" alt="Instagram">
+      <img src="img/tiktok_logo.png" alt="Tiktok">
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

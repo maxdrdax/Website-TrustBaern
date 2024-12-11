@@ -1,96 +1,96 @@
 /* Ueber uns */
 
-  .ueber_uns h1 {
-    margin: 0 0 1em 0;
+  .ueber_uns h1 { 
+    margin: 0 0 1em 0;/* Der obere und linke Rand (margin-top und margin-left) sind auf 0 gesetzt, deer untere Rand (margin-bottom) beträgt 1em um Platz unter der Überschrift zu schaffen  */
   }
   
   .ueber_uns {
-    grid-column: 1 / 6;
+    grid-column: 1 / 6; /*Dieses Element erstreckt sich im CSS-Grid über die Spalten 1-5 (exklusiv 6)  */
   }
 
   .geschichte {
-    grid-column: 6 / 13;
+    grid-column: 6 / 13; /* Dieses Element nimmt die Spalten 6-12 (exklusive 13) im Grid ein */
   }
 
 .infos-container img {
-    margin-top: 1.5em;
+    margin-top: 1.5em; /*Ein oberer Abstand von 1.5em wird für Bilder innerhalb des Containers hinzugefügt  */
 }
   
   #partner {
-    margin-top: 5em;
+    margin-top: 5em; /* Das Element hat einen oberen Abstand von 5em */
     color: var(--yellow);
   }
   
   .team-grid {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 31.25% 31.25% 31.25%;
-    grid-template-rows: auto;
-    grid-column-gap: 3%;
-    grid-row-gap: 3%;
-    vertical-align: center;
+    width: 100%; /* Die Breite des Grids füllt den gesamten verfügbaren Platz aus */
+    height: 100%; /* Die Höhe des Grids passt sich an den verfügbaren Platz an */
+    display: grid; /* Das Element wird zu einem Grid Container */
+    grid-template-columns: 31.25% 31.25% 31.25%; /* Das Grid besteht aus je drei gleich grossen Spalten */
+    grid-template-rows: auto; /* Die Zeilenhöhe wird automatisch basierend auf dem Inhalt bestimmt */
+    grid-column-gap: 3%; /* Der horizontale Abstand zwischen den Spalten beträgt 3% */
+    grid-row-gap: 3%;/* Der vertikale Abstand zwischen den Spalten beträgt 3% */
+    vertical-align: center; /* Inhalte innerhalb des Grids werden vertikal zentriert */
   }
 
   #team_ueberschrift {
-    margin: 4em 0 2em 0;
-    text-align: center;
+    margin: 4em 0 2em 0; /* Der obere Rand beträgt 4em, der untere Rand 2em und seitlich sind keine Ränder */
+    text-align: center; /*  Der Text wird horizontal zentriert*/
   }
   
   .team-member {
-    position: relative;
-    text-align: center;
-    padding: 10px;
-    border: inline;
-    border: 1px solid var(--lightblue);
-    border-radius: 10px;
+    position: relative; /* Ermöglicht die Positionierung von absoluten Elementen innerhalb des Blocks */
+    text-align: center; /*Der Text wird horizontal zentriert  */
+    padding: 10px; /*innenabstand von 10px  */
+    border: inline; /* Die Border wird innerhlab des Eleemnts gerechnet */
+    border: 1px solid var(--lightblue); /* Ein 1px breiter Rahmen */
+    border-radius: 10px;/* Die Ecken sind mit einem Rahmen von 10px abgerundet */
     background-color: rgba(0, 0, 0, 0.1);
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+    margin: 0; /*Kein äusserer Abstand  */
+    padding: 0; /* Kein innerer Abstand (überschreibt die vorherige Definition) */
+    width: 100%; /* Das Element nimmt die volle Breite seines Containers ein */
+    height: 100%;/* Das Element nimmt die volle Höhe seines Containers ein */
   }
   
   .team-member img {
     width: 90%;
     height: 80%;
-    object-fit: cover;
-    margin-top: 1em;
+    object-fit: cover; /*Das Bild wird skaliert, um den Container vollständig auszufüllen, ohne das Seitenverhältnis zu verändern  */
+    margin-top: 1em; /*  Ein oberer Abstand von 1em wird hinzugefügt*/
   }
   
   .team-member h3 {
     font-size: 1.2rem;
     color: var(--yellow);
-    margin-bottom: 0;
+    margin-bottom: 0; /* Kein Abstand unterhalb der Schrift */
   }
   
   .team-member p {
     font-size: 1rem;
     color: var(--lightblue);
-    margin: 0.5em 0 0 0;
+    margin: 0.5em 0 0 0; /* Der obere Rand beträgt 0.5em, alle anderen Ränder sind 0 */
   }
   
   .team-grid a {
-    text-decoration: none;
+    text-decoration: none; /* Entfernt die Standart-Unterstreichung bei Links */
   }
   
   .team-member:hover .mail_overlay {
-    position: absolute;
-    z-index: 1;
+    position: absolute; /*Das Overlay wird relativ zu seinem Elternteil positioniert  */
+    z-index: 1; /* Das Overlay wird vor anderen Inhalten angezeigt */
     top: 0;
-    left: 0;
+    left: 0; /* Das Overlay beginnt in der oberen linken Ecke des Elternteils */
     width: 100%;
     height: 100%;
     background-color: rgba(226, 55, 127, 0.5);
-    box-sizing: border-box;
-    backface-visibility: hidden;
-    transition: all 0.5s ease;
-    border-radius: 10px;
+    box-sizing: border-box; /* Innenabstand und Rahmen werden in die Gesamtgrösse einberechnet */
+    backface-visibility: hidden; /*Verhindert das Sichtbarwerden der Rückseite eines 3D-gedrehten Elements  */
+    transition: all 0.5s ease;/* Eine Übergangsanimation von 0.5 Sekunden mit gleichmässiger Beschleunigung wird angewandt */
+    border-radius: 10px; /* Die Ecken des Overlays sind abgerundet */
   }
   
   .team-member:hover {
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Eine glatte Transformations-Animation von 0.3sec */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*Ein Schatten wird hinzugefügt um den Hover-Effekt hervorzuheben  */
     border: 1px solid var(--yellow);
   }
 
@@ -100,9 +100,9 @@
   }
   
   .logo {
-    grid-column: span 2;
+    grid-column: span 2; /* Das Logo erstreckt sich über 2 Spalten  */
     max-width: 65%;
     max-height: 100%;
-    margin: auto auto;
+    margin: auto auto; /* Das Logo wird sowohl horizontal als auch vertikal zentriert */
   }
   

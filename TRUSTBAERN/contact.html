@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/contact.css">
-  <meta charset="utf-8">
-  <title>Trust Bärn</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Verknüpft eine externe CSS-Datei, die die Hauptgestaltung der Webseite enthält -->
+ <link rel="stylesheet" href="css/contact.css"> <!-- Verknüpft eine weitere CSS-Datei, die spezifische Stile für die Kontaktseite enthält -->
+  <meta charset="utf-8"> <!-- Legt das Zeichen-Encoding auf UTF-8 fest, um Sonderzeichen korrekt darzustellen -->
+  <title>Trust Bärn</title> <!-- Der Titel der Webseite der im Brwoser-Tab angezeigt wird -->
 </head>
 
 <body>
@@ -32,10 +32,7 @@
           <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
         </ul>
       </li>
-      <li><a href="unterstuetzen.html">Unterstützen</a>
-        <ul>
-          <li class="dropdown"><a href="#">Spenden</a></li>
-        </ul>
+      <li><a href="aktuelles.html">Aktuelles</a>
       </li>
       <li><a class="aktiver_menuelink" href="contact.html">Kontakt</a></li>
     </ul>
@@ -76,23 +73,22 @@
   </div>
 
 
-  <main class="wrapper">
-    <div class="contact-form">   
+  <main class="wrapper"> <!-- Hauptinhalt der Seite  -->
+    <div class="contact-form"> <!-- Bereich für das Kontaktformular -->  
       <h2 id="kontaktieren_ueberschrift">Kontaktiere uns</h2>
-      <form class="contact-container" action="#" method="post">
-        <input type="text" id="vorname" name="vorname" placeholder="Name/Vorname">
+      <form class="contact-container" action="#" method="post"> <!-- Ein Formular, das Nutzereingaben entgegennimmt -->
+        <input type="text" id="vorname" name="vorname" placeholder="Name/Vorname"> <!-- Eingabefelder für Benutzerinformationen -->
 
         <input type="email" id="email" name="email" placeholder="E-Mail" required>
 
         <input type="tel" id="telefon" name="telefon" placeholder="Telefon" required>
         <input type="text" id="betreff" name="betreff" placeholder="Betreff">
 
-        <textarea id="nachricht" name="nachricht" placeholder="Nachricht" required></textarea>
+        <textarea id="nachricht" name="nachricht" placeholder="Nachricht" required></textarea> <!--Textbereich für eine längere Nachricht  -->
 
         <button class="submit-button" type="submit">Senden</button>
       </form>
     </div>
-
   </main>
   
 

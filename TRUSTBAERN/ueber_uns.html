@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> <!-- Gleiche wie bei Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/ueber_uns.css">
-  <link rel="stylesheet" href="css/infos.css">
+  <link rel="stylesheet" href="css/infos.css"> <!-- Dass man die Klasse nicht doppelt machen muss  -->
   <meta charset="utf-8">
   <title>Trust Bärn</title>
 </head>
 
 <body>
 
-  <header>
+  <header> <!-- Gleich wie bei Stylesheet -->
     <div class="logo-header">
       <a href="index.html">
         <img src="img/Logo_TrustBaern.svg" width="15%">
@@ -23,7 +23,7 @@
     </div>
   </header>
 
-  <nav>
+  <nav> <!-- Gleich wie bei Stylesheet -->
     <ul class="menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="infos.html">Infos</a>
@@ -33,10 +33,7 @@
           <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
         </ul>
       </li>
-      <li><a href="unterstuetzen.html">Unterstützen</a>
-        <ul>
-          <li class="dropdown"><a href="#">Spenden</a></li>
-        </ul>
+      <li><a href="aktuelles.html">Aktuelles</a>
       </li>
       <li><a href="contact.html">Kontakt</a></li>
     </ul>
@@ -79,7 +76,7 @@
 
 
 
-  <main class="wrapper">
+  <main class="wrapper"> <!-- Klasse für Responsiveness -->
     <div class="infos infos-container">
     <article class="article ueber_uns">
       <h1>Wer sind wir?</h1>
@@ -89,7 +86,7 @@
         für mehr Sicherheit, Vertrauen und Gemeinschaft in der Stadt Bern.</p>
     </article>
 
-    <article class="article geschichte">
+    <article class="article geschichte">  <!-- Dient dazu, einen eigenständigen, thematisch zusammenhängenden Inhalt zu definieren. -->
       <h1>Geschichte</h1>
       <p>Die Idee für TRUST BÄRN entstand 2023, als wir uns, Saskia, Marina, Jule, Cedi, Max und Ella –
         berufstätig in Gastronomie, Sicherheit und Eventmanagement – nach Schichten regelmässig gemeinsam
@@ -102,7 +99,8 @@
   </div>
 
 
-    <h1 id="team_ueberschrift">Team</h1>
+
+    <h1 id="team_ueberschrift">Team</h1>  <!-- Weil ober Grid kommt es oben drannen. ID wird vermutlich für spezifisches Styling oder für Ankerlinks verwendet, z. B., um per Sprungmarke zu dieser Sektion zu navigieren.-->
     <div class="team-grid">
       <a href="mailto:saskia@trustbaern.ch" class="team-member">
         <img src="img/saskia.jpg" alt="Team Member 1">
@@ -111,6 +109,7 @@
         <span class="mail_overlay">
           <!-- <img class="mail_icon" src="img/mail.svg" alt="Mail"> -->
         </span>
+
       </a>
       <a href="mailto:cedrian@trustbaern.ch" class="team-member">
         <img src="img/cedi.png" alt="Team Member 2">
@@ -159,7 +158,7 @@
 
     <h2 id="partner">Unsere Partner</h2>
     <div class="grid">
-      <img class="logo" src="img/cafe-kairo-bern-logo.svg" alt="Partner 1 Logo">
+      <img class="logo" src="img/cafe-kairo-bern-logo.svg" alt="Partner 1 Logo"> <!-- alt = was wird angezeigt wenn das Foto nicht angezeigt wird -->
       <img class="logo" src="img/gaskessel_logo.svg" alt="Partner 2 Logo">
       <img class="logo" src="img/logo_kanton_bern.svg" alt="Partner 3 Logo">
       <img class="logo" src="img/logo_pyri_weiss.png" alt="Partner 4 Logo">
