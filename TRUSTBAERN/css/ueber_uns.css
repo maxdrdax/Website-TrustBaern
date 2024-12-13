@@ -1,20 +1,31 @@
 /* Ueber uns */
 
-  .ueber_uns h1 { 
+  .wer_sind_wir h1 { 
     margin: 0 0 1em 0;/* Der obere und linke Rand (margin-top und margin-left) sind auf 0 gesetzt, deer untere Rand (margin-bottom) beträgt 1em um Platz unter der Überschrift zu schaffen  */
   }
   
-  .ueber_uns {
+  .wer_sind_wir {
     grid-column: 1 / 6; /*Dieses Element erstreckt sich im CSS-Grid über die Spalten 1-5 (exklusiv 6)  */
+  }
+
+  .infos img {
+    width: 90%; /* Die Höhe des Bildes beträgt 90% des verfügbaren Platzes */
+    margin: 0 auto; /* Das Bild wird horizontal zentriert */
+  }
+
+  .wer_sind_wir img {
+    margin-bottom: 2em;
   }
 
   .geschichte {
     grid-column: 6 / 13; /* Dieses Element nimmt die Spalten 6-12 (exklusive 13) im Grid ein */
+    box-sizing: border-box; /* Innenabstand und Rahmen werden in die Gesamtgrösse einberechnet */
+    height: 100%;
   }
 
-.infos-container img {
-    margin-top: 1.5em; /*Ein oberer Abstand von 1.5em wird für Bilder innerhalb des Containers hinzugefügt  */
-}
+  .geschichte img {
+    margin-top: 8em; /* Ein oberer Rand von 3em wird hinzugefügt */
+  }
   
   #partner {
     margin-top: 5em; /* Das Element hat einen oberen Abstand von 5em */
@@ -22,17 +33,15 @@
   }
   
   .team-grid {
-    width: 100%; /* Die Breite des Grids füllt den gesamten verfügbaren Platz aus */
-    height: 100%; /* Die Höhe des Grids passt sich an den verfügbaren Platz an */
     display: grid; /* Das Element wird zu einem Grid Container */
-    grid-template-columns: 31.25% 31.25% 31.25%; /* Das Grid besteht aus je drei gleich grossen Spalten */
-    grid-template-rows: auto; /* Die Zeilenhöhe wird automatisch basierend auf dem Inhalt bestimmt */
-    grid-column-gap: 3%; /* Der horizontale Abstand zwischen den Spalten beträgt 3% */
-    grid-row-gap: 3%;/* Der vertikale Abstand zwischen den Spalten beträgt 3% */
+    grid-template-columns: repeat(4, 1fr); /* Das Grid besteht aus drei gleich breiten Spalten */
+    grid-template-rows: 20vw 20vw; /* Das Grid besteht aus zwei gleich hohen Reihen */
+    grid-column-gap: 3em; /* Der horizontale Abstand zwischen den Spalten beträgt 3% */
+    grid-row-gap: 3em;/* Der vertikale Abstand zwischen den Spalten beträgt 3% */
     vertical-align: center; /* Inhalte innerhalb des Grids werden vertikal zentriert */
   }
 
-  #team_ueberschrift {
+  .wrapper h1 {
     margin: 4em 0 2em 0; /* Der obere Rand beträgt 4em, der untere Rand 2em und seitlich sind keine Ränder */
     text-align: center; /*  Der Text wird horizontal zentriert*/
   }
@@ -44,24 +53,24 @@
     border: inline; /* Die Border wird innerhlab des Eleemnts gerechnet */
     border: 1px solid var(--lightblue); /* Ein 1px breiter Rahmen */
     border-radius: 10px;/* Die Ecken sind mit einem Rahmen von 10px abgerundet */
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     margin: 0; /*Kein äusserer Abstand  */
-    padding: 0; /* Kein innerer Abstand (überschreibt die vorherige Definition) */
+    padding: 2em; /* Innenabstand von 2em */
     width: 100%; /* Das Element nimmt die volle Breite seines Containers ein */
-    height: 100%;/* Das Element nimmt die volle Höhe seines Containers ein */
+    height: 100%; /* Das Element nimmt die volle Höhe seines Containers ein */
+    box-sizing: border-box; /* Innenabstand und Rahmen werden in die Gesamtgrösse einberechnet */
   }
   
   .team-member img {
     width: 90%;
     height: 80%;
     object-fit: cover; /*Das Bild wird skaliert, um den Container vollständig auszufüllen, ohne das Seitenverhältnis zu verändern  */
-    margin-top: 1em; /*  Ein oberer Abstand von 1em wird hinzugefügt*/
   }
   
   .team-member h3 {
     font-size: 1.2rem;
     color: var(--yellow);
-    margin-bottom: 0; /* Kein Abstand unterhalb der Schrift */
+    margin: 1.3em 0 0 0; /* Der obere Rand beträgt 0.5em, alle anderen Ränder sind 0 */
   }
   
   .team-member p {
@@ -95,7 +104,6 @@
   }
 
   #partner {
-    margin-top: 8em;
     color: var(--yellow);
   }
   

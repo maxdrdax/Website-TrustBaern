@@ -227,6 +227,11 @@ h1 { /* Hauptüberschrift */
   margin: 0 auto;
 }
 
+.badge:hover { /* Hover-Effekt */
+  transform: scale(1.05); /* Skalierung des Elements, 1.1: 110% der Originalgrösse */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
 #apple_badge {
   margin-bottom: 0.5em;
 }
