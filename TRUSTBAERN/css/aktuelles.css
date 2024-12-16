@@ -99,6 +99,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 25px;
 }
 
 .zwei_ueberschriften {
@@ -114,6 +115,8 @@
   padding: 10px 5px 10px 5px;
   display: inline;
   font-weight: 500;
+  border-radius: 5px;
+
 }
 
 .titel {
@@ -122,6 +125,8 @@
   padding: 10px 5px 10px 5px;
   font-weight: 500;
   margin-top: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
 }
 
 h2 {
@@ -138,6 +143,7 @@ h2 {
 .grosse_nachricht_vertikal:hover,
 .kleine_nachricht:hover {
   border: 10px solid var(--pink);
+  border-radius: 25px;
 }
 
 
