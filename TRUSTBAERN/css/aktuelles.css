@@ -4,7 +4,6 @@
   grid-auto-rows: 15vw;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  /* width: 100%; */
 }
 
 .grosse_nachricht,
@@ -23,7 +22,7 @@
 
 .grosse_nachricht_vertikal {
   height: auto;
-  grid-column: 4;
+  grid-column: 4/5;
   grid-row: 1/3;
 }
 
@@ -31,7 +30,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .zwei_ueberschriften {
@@ -39,7 +38,6 @@
   position: absolute;
   bottom: 1.2rem;
   left: 1rem;
-  width: 80%;
 }
 
 .kategorie {
@@ -60,8 +58,8 @@
   margin-top: 15px;
   margin-right: 15px;
   border-radius: 5px;
-align-items: center;
-max-width: 250px;}
+  align-items: center;
+  max-width: 250px;}
 
 h2 {
   margin: 0;
@@ -81,6 +79,58 @@ h2 {
   border-radius: 25px;
 }
 
-/* @media screen 1540 {
+@media (max-width: 1530px) {
   
-} */
+  .alle_nachrichten {
+    grid-template-columns: 49% 49%;
+    grid-auto-rows: 30vw;
+    column-gap: 1%;
+  }
+
+  .grosse_nachricht {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .grosse_nachricht_vertikal {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+
+  .kleine_nachricht {
+    grid-column: 1/2;
+  }
+
+}
+
+@media (max-width: 768px) {
+  
+  .alle_nachrichten {
+    grid-template-columns: 100%;
+    grid-auto-rows: 60vw;
+    column-gap: 1%;
+  }
+
+  .grosse_nachricht {
+    grid-column: 1/2;
+  }
+
+  .grosse_nachricht_vertikal {
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+
+  .kleine_nachricht {
+    grid-column: 1/2;
+  }
+
+  .titel {
+    font-size: 1.3rem;
+  }
+
+  .kategorie {
+    font-size: 0.9rem;
+  }
+
+}
+

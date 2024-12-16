@@ -1,9 +1,12 @@
 /* Fonts*/
 
 
-@font-face { /* sagt, dass man Font brauchen kann und auch Nutzende, die die Schrift nicht haben, dass sie es brauchen können */
-  font-family: Din Condensed; /* Namensgebung */
-  src: url(../fonts/din_condensed_bold.ttf); /* Verlinkung zum Font */
+@font-face {
+  /* sagt, dass man Font brauchen kann und auch Nutzende, die die Schrift nicht haben, dass sie es brauchen können */
+  font-family: Din Condensed;
+  /* Namensgebung */
+  src: url(../fonts/din_condensed_bold.ttf);
+  /* Verlinkung zum Font */
 }
 
 @font-face {
@@ -24,7 +27,8 @@
 
 /* Root*/
 
-:root { /* Wird im allgemeinen benutzt, um Variabeln zu definieren. Unsere Farbbibliothek */
+:root {
+  /* Wird im allgemeinen benutzt, um Variabeln zu definieren. Unsere Farbbibliothek */
   --yellow: rgb(255, 255, 51);
   --blue: rgb(16, 9, 53);
   --pink: rgb(226, 55, 127);
@@ -39,55 +43,80 @@
 
 body {
   background-image: url(../img/background.svg);
-  width: 100%; /* 100% der Anzeige vom Screen */
+  width: 100%;
+  /* 100% der Anzeige vom Screen */
   height: 100%;
-  color: var(--lightblue); /* Farbe für Text */
+  color: var(--lightblue);
+  /* Farbe für Text */
   background-repeat: repeat;
-  font-family: 'Dm Mono Light'; /* Alles im Body hat diesen Font */
+  font-family: 'Dm Mono Light';
+  /* Alles im Body hat diesen Font */
   background-color: var(--blue);
 }
 
-a { /* a=Alles Sachen die mit Links zu tun haben. href ist ein attribut davon*/
+a {
+  /* a=Alles Sachen die mit Links zu tun haben. href ist ein attribut davon*/
   color: var(--lightblue);
 }
 
 
-.logo-header { /*Logo Trust Bärn im Header*/
+.logo-header {
+  /*Logo Trust Bärn im Header*/
   text-align: center;
 }
 
 /* Styling Button */
-.login-button { /*Button rechts oben um zur Login Seite zu kommen*/
-  position: absolute; /*Neue Ebene: Positionierungverhalten Element steuern, entfernt das Element aus dem normalen Fluss des Dokuments. Wenn der Container oder die Seite scrollt, bleibt der Button immer an der gleichen Position relativ zum Viewport oder Container*/
-  top: 20px; /*Abstand des Buttons vom obersten Rand, Alternative zu Pixel ist em (Margin und Padding), rem (Text), fr(Grid), */
-  right: 20px; /*Abstand des Buttons vom rechten Rand*/
+.login-button {
+  /*Button rechts oben um zur Login Seite zu kommen*/
+  position: absolute;
+  /*Neue Ebene: Positionierungverhalten Element steuern, entfernt das Element aus dem normalen Fluss des Dokuments. Wenn der Container oder die Seite scrollt, bleibt der Button immer an der gleichen Position relativ zum Viewport oder Container*/
+  top: 20px;
+  /*Abstand des Buttons vom obersten Rand, Alternative zu Pixel ist em (Margin und Padding), rem (Text), fr(Grid), */
+  right: 20px;
+  /*Abstand des Buttons vom rechten Rand*/
 }
 
-.login-button .button { 
-  background-color: var(--yellow); /*Hintergrundfarbe vom Button*/
-  color: var(--pink); /*Schriftfarbe von Login Schrift im Button*/
-  padding: 10px 20px; /*Innenabstand zwischen dem Inhalt eines Elements und dem Rand (Border) des Elements, 10px oben und unten, 20px rechts und links*/
-  border: none; /*border macht ein Rahmen um das Element, jedoch bei uns jetzt keiner weil "none", man sagt damit, dass die boarder nicht angezeigt wird.*/
-  border-radius: 5px; /*Ecken eines Elements abrunden*/
-  font-family: 'Din Alternate'; /*Schriftfamilie definieren*/
-  font-size: 1rem; /*wie gross die Schrift sein soll: rem ist für Text*/
-  text-decoration: none; /*Textstil-Änderungen: Unterstreichen, Durchstreichen, Überstreichen*/
-  transition: background-color 0.3s ease, color 0.3s ease; /*Änderung des Elements smooth durchführen: [Eigenschaft] [Dauer] [Timing-Funktion] [Verzögerung]*/
-}                                                          /*ease: langsam, schnell, langsam*/
+.login-button .button {
+  background-color: var(--yellow);
+  /*Hintergrundfarbe vom Button*/
+  color: var(--pink);
+  /*Schriftfarbe von Login Schrift im Button*/
+  padding: 10px 20px;
+  /*Innenabstand zwischen dem Inhalt eines Elements und dem Rand (Border) des Elements, 10px oben und unten, 20px rechts und links*/
+  border: none;
+  /*border macht ein Rahmen um das Element, jedoch bei uns jetzt keiner weil "none", man sagt damit, dass die boarder nicht angezeigt wird.*/
+  border-radius: 5px;
+  /*Ecken eines Elements abrunden*/
+  font-family: 'Din Alternate';
+  /*Schriftfamilie definieren*/
+  font-size: 1rem;
+  /*wie gross die Schrift sein soll: rem ist für Text*/
+  text-decoration: none;
+  /*Textstil-Änderungen: Unterstreichen, Durchstreichen, Überstreichen*/
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /*Änderung des Elements smooth durchführen: [Eigenschaft] [Dauer] [Timing-Funktion] [Verzögerung]*/
+}
 
-.login-button .button:hover { /*drüberfahren Login Button*/
-  background-color: var(--pink); /*Hintergrundfarbe Button wenn drüberfahren mit Maus*/
-  color: var(--yellow); /*Schrift Login wenn drüberfahren mit Maus*/
+/*ease: langsam, schnell, langsam*/
+
+.login-button .button:hover {
+  /*drüberfahren Login Button*/
+  background-color: var(--pink);
+  /*Hintergrundfarbe Button wenn drüberfahren mit Maus*/
+  color: var(--yellow);
+  /*Schrift Login wenn drüberfahren mit Maus*/
 }
 
 /* Navigation Stylen */
 
-nav { /*Navigation*/
- font-size: 1.5rem; 
- margin-bottom: 4em; /*Abstand (den Rand) am unteren Ende eines Elements zu steuern zum anderen Element*/
+nav {
+  /*Navigation*/
+  font-size: 1.5rem;
+  margin-bottom: 4em;
+  /*Abstand (den Rand) am unteren Ende eines Elements zu steuern zum anderen Element*/
 }
 
-.menu { 
+.menu {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -104,7 +133,6 @@ nav { /*Navigation*/
 }
 
 .menu a {
-  padding: 15px;
   padding-bottom: 5px;
   transition: 0.3s ease;
   border: 1px solid transparent;
@@ -136,75 +164,103 @@ nav { /*Navigation*/
   margin-top: 10px;
 }
 
-nav ul li:hover ul { /*Dropdown-Menü zu erstellen, das sichtbar wird, wenn der Benutzer mit der Maus über ein Listenelement fährt*/
-  display: block; /*Das Element nimmt den ganzen Platz ein, alles neue wird auf eine neue Zeile getan*/
-  padding: 0px; 
-  margin: 0px; /*Außenabstand (also den Abstand zwischen einem Element und anderen benachbarten Elementen)*/
-  padding-bottom: 10px; /*10px; Innenabstand (Padding) am unteren Rand eines Elements zu definieren.*/
-  z-index: 1; /* Stapelelemente ordnen, wenn Elemente übereinander liegen. z.B hier liegt das Element über einem Element mit einem tieferen z-index */
+nav ul li:hover ul {
+  /*Dropdown-Menü zu erstellen, das sichtbar wird, wenn der Benutzer mit der Maus über ein Listenelement fährt*/
+  display: block;
+  /*Das Element nimmt den ganzen Platz ein, alles neue wird auf eine neue Zeile getan*/
+  padding: 0px;
+  margin: 0px;
+  /*Außenabstand (also den Abstand zwischen einem Element und anderen benachbarten Elementen)*/
+  padding-bottom: 10px;
+  /*10px; Innenabstand (Padding) am unteren Rand eines Elements zu definieren.*/
+  z-index: 1;
+  /* Stapelelemente ordnen, wenn Elemente übereinander liegen. z.B hier liegt das Element über einem Element mit einem tieferen z-index */
 }
 
 
 
 /* Grid */
 
-.wrapper { 
+.wrapper {
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
 }
 
-.grid { /*flexibles Raster*/
-  display: grid; /*Aktiviert das Grid*/
-  grid-template-columns: repeat(12, 1fr); /*Legt das Spalten-Layout des Grid fest, Anzahl und Breite der Spalten*/
-  grid-template-rows: auto;  /*Leg das Zeilenlayout des Grids, Höhen der Zeilen werden automatisch an den Inhalt angepasst*/
-  width: 100%; /*Grid Container Element nimmt 100% des übergeordneten Containers ein*/
-  grid-column-gap: 3em; /*horizontaler Abstand zwischen den Spalten: 1em bedeutet, dass der Abstand 1 Einheit der Schriftgrösse des Elements beträgt*/
-  grid-row-gap: 5em; /*vertikaler Abstand zwischen Zeilen: 5em bedeutet, dass der Abstand 5 Einheiten der Schriftgrösse besteht*/
+.grid {
+  /*flexibles Raster*/
+  display: grid;
+  /*Aktiviert das Grid*/
+  grid-template-columns: repeat(12, 1fr);
+  /*Legt das Spalten-Layout des Grid fest, Anzahl und Breite der Spalten*/
+  grid-template-rows: auto;
+  /*Leg das Zeilenlayout des Grids, Höhen der Zeilen werden automatisch an den Inhalt angepasst*/
+  width: 100%;
+  /*Grid Container Element nimmt 100% des übergeordneten Containers ein*/
+  grid-column-gap: 3em;
+  /*horizontaler Abstand zwischen den Spalten: 1em bedeutet, dass der Abstand 1 Einheit der Schriftgrösse des Elements beträgt*/
+  grid-row-gap: 5em;
+  /*vertikaler Abstand zwischen Zeilen: 5em bedeutet, dass der Abstand 5 Einheiten der Schriftgrösse besteht*/
 }
 
 .grid_text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 4erm;
-  font-weight: 700; /*Schriftstärke: 700: bold / 400: normal / 300: dünn / 900: extra fett*/
+  font-weight: 700;
+  /*Schriftstärke: 700: bold / 400: normal / 300: dünn / 900: extra fett*/
   color: var(--pink);
-  border: 1px solid var(--yellow); /*solid: durchgezogene Linie*/
-  text-align: center; 
+  border: 1px solid var(--yellow);
+  /*solid: durchgezogene Linie*/
+  text-align: center;
 }
 
 
 /* Home */
 
-h1 { /* Hauptüberschrift */
+h1 {
+  /* Hauptüberschrift */
   font-size: 2rem;
   color: var(--yellow);
-  margin-top: 0; /* äusseren Abstand (vom Rand) Element nach oben  */
+  margin-top: 0;
+  /* äusseren Abstand (vom Rand) Element nach oben  */
 }
 
-.illustration_rechts { /* Hände */
-  width: 100%; /* nimmt gesamte Breite des Elements ein */
+.illustration_rechts {
+  /* Hände */
+  width: 100%;
+  /* nimmt gesamte Breite des Elements ein */
 }
 
-.article { /* Text zu Trust Bärn */
-  border: 1px solid white; /* Weisser Rahmen mit Dicke 1px */
-  border-radius: 25px; /* rundet die Ecken des Rahmens ab */
-  height: fit-content; /* höhe wird automatisch angepasst, dass der Inhalt Platz hat */
+.article {
+  /* Text zu Trust Bärn */
+  border: 1px solid white;
+  /* Weisser Rahmen mit Dicke 1px */
+  border-radius: 25px;
+  /* rundet die Ecken des Rahmens ab */
+  height: fit-content;
+  /* höhe wird automatisch angepasst, dass der Inhalt Platz hat */
   background: rgba(0, 0, 0, 0.2);
-  padding: 2em; 
+  padding: 2em;
 }
 
-.left { /* Trust Bärn Map */
-  grid-column: 1/9; /* Ist ganz links im 9er Grid */
+.left {
+  /* Trust Bärn Map */
+  grid-column: 1/9;
+  /* Ist ganz links im 9er Grid */
 }
 
-.right { /* Illustration Hand */
-  grid-column: 9/13; /* Wo im Grid es sich befindet */
-  align-items: start; /* Ausrichtung von Elementen entlang der Querachse (horizontal bei Columns) */
+.right {
+  /* Illustration Hand */
+  grid-column: 9/13;
+  /* Wo im Grid es sich befindet */
+  align-items: start;
+  /* Ausrichtung von Elementen entlang der Querachse (horizontal bei Columns) */
 }
 
 
-.cta { /* Call to Action mit Logos und Download Buttons Appstore und Logo Trust Bärn */
+.cta {
+  /* Call to Action mit Logos und Download Buttons Appstore und Logo Trust Bärn */
   text-align: center;
   border: none;
   background: none;
@@ -212,24 +268,32 @@ h1 { /* Hauptüberschrift */
   grid-row: 1/3;
 }
 
-.text-cta { /* Call To Action Text */
+.text-cta {
+  /* Call To Action Text */
   margin: 2em 0;
 }
 
-.app-icon { /* Trust Bärn App Icon */
+.app-icon {
+  /* Trust Bärn App Icon */
   width: 60%;
-  margin: 0 auto; /* 0: kein Abstand unten und oben / auto: Rand links und recht automatisch. Element horizontal zentriert. */
-  margin-bottom: 1em; /* fügt einen Abstand unter dem Element ein*/
+  margin: 0 auto;
+  /* 0: kein Abstand unten und oben / auto: Rand links und recht automatisch. Element horizontal zentriert. */
+  margin-bottom: 1em;
+  /* fügt einen Abstand unter dem Element ein*/
 }
 
-.badge { /* applestore und google play store */
+.badge {
+  /* applestore und google play store */
   width: 60%;
   margin: 0 auto;
 }
 
-.badge:hover { /* Hover-Effekt */
-  transform: scale(1.05); /* Skalierung des Elements, 1.1: 110% der Originalgrösse */
-  transition: transform 0.3s ease; /* Smooth transition */
+.badge:hover {
+  /* Hover-Effekt */
+  transform: scale(1.05);
+  /* Skalierung des Elements, 1.1: 110% der Originalgrösse */
+  transition: transform 0.3s ease;
+  /* Smooth transition */
 }
 
 #apple_badge {
@@ -249,10 +313,14 @@ footer {
 }
 
 .footer-content {
-  display: flex;           /* Aktiviert Flexbox für den Container */
-  flex-wrap: wrap;         /* Erlaubt den Umbruch der Elemente, wenn der Platz nicht ausreicht */
-  justify-content: center; /* Zentriert die Flex-Elemente auf der Hauptachse */
-  width: auto;             /* Die Breite des Containers passt sich automatisch an den Inhalt an */
+  display: flex;
+  /* Aktiviert Flexbox für den Container */
+  flex-wrap: wrap;
+  /* Erlaubt den Umbruch der Elemente, wenn der Platz nicht ausreicht */
+  justify-content: center;
+  /* Zentriert die Flex-Elemente auf der Hauptachse */
+  width: auto;
+  /* Die Breite des Containers passt sich automatisch an den Inhalt an */
 }
 
 
@@ -261,9 +329,12 @@ footer {
 }
 
 .footer-section {
-  min-width: 300px;        /* Legt die minimale Breite des Elements auf 300px fest */
-  margin: 10px;             /* Fügt einen Abstand von 10px rund um das Element hinzu */
-  justify-content: center;  /* Zentriert die Flex-Elemente entlang der Hauptachse */
+  min-width: 300px;
+  /* Legt die minimale Breite des Elements auf 300px fest */
+  margin: 10px;
+  /* Fügt einen Abstand von 10px rund um das Element hinzu */
+  justify-content: center;
+  /* Zentriert die Flex-Elemente entlang der Hauptachse */
 }
 
 .footer-section h2 {
@@ -295,19 +366,41 @@ footer {
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--pink); /* Fügt oben eine 1px dicke, pinke Linie hinzu */
-  padding-top: 10px;                  /* Fügt 10px Abstand oben innerhalb des Elements hinzu */
-  font-family: 'Din Alternate Light';  /* Setzt die Schriftart auf 'Din Alternate Light' */
-  font-size: 0.9rem;                  /* Setzt die Schriftgröße auf 0.9rem (90% der Standard-Schriftgröße) */
-  margin-top: 20px;                   /* Fügt 20px Abstand oben um das Element hinzu */
-  width: fit-content;                 /* Passt die Breite des Elements an den Inhalt an */
-  margin-left: auto;                  /* Zentriert das Element horizontal (mit margin-right: auto) */
-  margin-right: auto;                 /* Zentriert das Element horizontal (mit margin-left: auto) */
+  border-top: 1px solid var(--pink);
+  /* Fügt oben eine 1px dicke, pinke Linie hinzu */
+  padding-top: 10px;
+  /* Fügt 10px Abstand oben innerhalb des Elements hinzu */
+  font-family: 'Din Alternate Light';
+  /* Setzt die Schriftart auf 'Din Alternate Light' */
+  font-size: 0.9rem;
+  /* Setzt die Schriftgröße auf 0.9rem (90% der Standard-Schriftgröße) */
+  margin-top: 20px;
+  /* Fügt 20px Abstand oben um das Element hinzu */
+  width: fit-content;
+  /* Passt die Breite des Elements an den Inhalt an */
+  margin-left: auto;
+  /* Zentriert das Element horizontal (mit margin-right: auto) */
+  margin-right: auto;
+  /* Zentriert das Element horizontal (mit margin-left: auto) */
 }
 
 
 
 /* Responsive Design for Tablets and Smartphones */
+
+@media (max-width: 1530px) {
+  .dropdown {
+    display: none;
+  }
+
+  .app-icon {
+    width: 90%;
+  }
+
+  .badge {
+    width: 80%;
+  }
+}
 
 @media (max-width: 768px) {
   .wrapper {
@@ -337,8 +430,9 @@ footer {
     margin: 10px 0;
   }
 
-  .article {
-    grid-column: 1/13;
+  /* Dropdown Menu ausblenden */
+  .dropdown {
+    display: none;
   }
 
   /* Hamburger_Menu */
@@ -367,15 +461,6 @@ footer {
     position: relative;
   }
 
-  .submenu-content {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    width: fit-content;
-    z-index: 1;
-    left: 7rem;
-    top: -0.7rem;
-  }
 
   .submenu:hover .submenu-content {
     display: flex;
@@ -431,27 +516,26 @@ footer {
     transform: rotate(45deg);
     top: 0;
   }
+
+  /* Inhalt */
+
+  .grid {
+    display: block;
+  }
+
+  .grid .article {
+    margin: 4em 0;
+  }
+
 }
 
 @media (max-width: 360px) {
+
   .wrapper {
     width: 80%;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .article {
-    margin: 10px 0;
-  }
-
-  .article,
-  .illustration_rechts {
-    grid-column: 1/13;
-    width: 100%;
-  }
   .footer-section {
-    min-width: 10px ;
-}
+    min-width: 10px;
+  }
 }

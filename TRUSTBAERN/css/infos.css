@@ -10,8 +10,7 @@
 
 
 .faq-section {
-    grid-column: 1 / 9; /* Gibt an, dass das .faq-section-Element im übergeordneten Grid-Container die Spalten von 1 bis 9 belegt. */
-    width: 100%; /* 100% der 1-9 Spalten */
+    grid-column: 1 / 8; /* Gibt an, dass das .faq-section-Element im übergeordneten Grid-Container die Spalten von 1 bis 9 belegt. */
     padding: 0; /* Kein Padding */
     margin-top: 0;/* Oben kein Margin */
 }
@@ -20,7 +19,7 @@
 .infos-container h1 {
     text-align: left; /* Richtet den Text des <h1>-Elements links aus. */
     vertical-align: top; /* Oben im Container */
-    margin: 0  0 1.5em 0; /* auf jeder Seite, beginnend mit oben und dann im Uhrzeigersinn */
+    margin: 0  0 1em 0; /* auf jeder Seite, beginnend mit oben und dann im Uhrzeigersinn */
     padding: 0;
 }
 
@@ -108,6 +107,10 @@
     text-decoration: underline;
   }
 
+  .self-defense h1 {
+    margin-bottom: 1em;
+  }
+
   .video-container {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +120,7 @@
 
   .video-container iframe {
     width: 100%;
-    max-width: 400px;
+    max-width: 360px;
     height: 15em;
     border-radius: 15px;
     border: 1px solid #ffffff;
@@ -127,3 +130,32 @@
     transform: scale(1.05);
     transition: transform 0.3s;
   }
+
+  @media (max-width: 768px) {
+    .infos-container {
+      display: block;
+    }
+
+    .video-container iframe {
+      max-width: 100%;
+      height: 20em;
+    }
+
+    .infos-container {
+      margin-bottom: 0;
+    }
+
+    .infos-container h1 {
+      margin-top: 2em;
+    }
+
+    .self-defense h1 {
+      margin-top: 2em;
+      hyphens: auto;
+    }
+
+  }
+
+  
+
+  
