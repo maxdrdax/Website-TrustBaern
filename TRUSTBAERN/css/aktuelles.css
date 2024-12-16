@@ -4,7 +4,7 @@
   grid-auto-rows: 15vw;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .grosse_nachricht,
@@ -38,7 +38,9 @@
   color: white;
   position: absolute;
   bottom: 1.2rem;
-  left: 1rem
+  left: 1rem;
+  /* height: 100%; */
+  width: 100%;
 }
 
 .kategorie {
@@ -59,7 +61,8 @@
   margin-top: 15px;
   margin-right: 15px;
   border-radius: 5px;
-}
+align-items: center;
+max-width: 250px;}
 
 h2 {
   margin: 0;
@@ -78,4 +81,6 @@ h2 {
   border-radius: 25px;
 }
 
-
+@media screen 1540{
+  
+}
