@@ -52,6 +52,8 @@ body {
   font-family: 'Dm Mono Light';
   /* Alles im Body hat diesen Font */
   background-color: var(--blue);
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -439,26 +441,19 @@ footer {
 
   .menu {
     display: none;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hamburger-menu {
     display: block;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 4em;
   }
 
   .menu a {
     padding: 10px;
     width: fit-content;
     text-align: center;
-  }
-
-  .submenu {
-    position: relative;
   }
 
 

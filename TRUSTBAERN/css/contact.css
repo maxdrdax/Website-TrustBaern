@@ -96,40 +96,24 @@ placeholder {
 
 /*Responsive für Mobile-Geräte ab 360px*/
 
-
-@media (max-width: 360px) { /*bei einer Breite unter 768px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
-    .contact-container input,
-    .contact-container textarea {
-    font-size: 0.75rem; 
-}
-#vorname {
-    grid-column: 1 / 3; /* Diese beiden Sachen definieren die Position jedes Elements im Raster, Bsp. #vorname ist in der ersten Spalte und ersten Zeile  */
-    grid-row: 1 / 2;
-}
-
-#email {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-}
-
-#telefon {
-    grid-column: 1 / 3;
-    grid-row: 3 / 4;
-}
-
-#betreff {
-    grid-column: 1 / 3;
-    grid-row: 4 / 5;
-}
-
-#nachricht {
-    grid-column: 1 / 3;
-    grid-row: 5 / 6;
-}
-#kontaktieren_ueberschrift {
-    font-size: 0.75rem;
-}
-
-
+@media (max-width: 1500px) { /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
+   
+    .contact-container {
+        display: block;
     }
+
+.contact-container input, .contact-container textarea {
+    margin: 1em 0;
+}
+}
+
+
+
+@media (max-width: 768px) { /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
+
+    .contact-form {
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
     

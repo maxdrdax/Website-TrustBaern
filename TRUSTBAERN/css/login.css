@@ -6,7 +6,7 @@
     border: 2px solid white;               /* Fügt einen 2px dicken weißen Rand hinzu */
     border-radius: 25px;                   /* Abgerundete Ecken mit einem Radius von 25px */
     padding: 40px 30px;                    /* Innenabstand: 40px oben und unten, 30px links und rechts */
-    width: 30%;                            /* Die Breite der Box beträgt 30% des übergeordneten Containers */
+    width: 35%;                            /* Die Breite der Box beträgt 30% des übergeordneten Containers */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Fügt einen Schatten hinzu: 5px nach unten, 15px Unschärfe, leicht transparente schwarze Farbe */
     margin: 0 auto;                        /* Zentriert die Box horizontal, indem der linke und rechte Rand automatisch zugewiesen wird */
   }
@@ -60,4 +60,20 @@ color: var(--lightblue);
 .submit-button-login:hover {
 background-color: var(--pink);
 color: var(--yellow);
+}
+
+@media (max-width: 1500px) { /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
+
+  .login-box{
+      box-sizing: border-box;
+      width: 60%;
+  }
+}
+
+@media (max-width: 768px) { /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
+
+  .login-box{
+      box-sizing: border-box;
+      width: 100%;
+  }
 }

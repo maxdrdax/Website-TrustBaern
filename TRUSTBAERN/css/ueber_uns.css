@@ -105,7 +105,6 @@
     height: 100%;
     background-color: rgba(226, 55, 127, 0.5);
     box-sizing: border-box; /* Innenabstand und Rahmen werden in die Gesamtgrösse einberechnet */
-    backface-visibility: hidden; /*Verhindert das Sichtbarwerden der Rückseite eines 3D-gedrehten Elements  */
     transition: all 0.5s ease;/* Eine Übergangsanimation von 0.5 Sekunden mit gleichmässiger Beschleunigung wird angewandt */
     border-radius: 10px; /* Die Ecken des Overlays sind abgerundet */
   }
@@ -195,4 +194,14 @@
       grid-row-gap: 2em;
       margin-top: 2em;
     }
+
+    .team-member h3 {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .team-member p {
+      font-size: 0.85rem;
+    }
+
   }

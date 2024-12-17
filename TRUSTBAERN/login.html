@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="css/style.css">      <!-- Verknüpft die CSS-Datei 'style.css' -->
-  <link rel="stylesheet" href="css/login.css">       <!-- Verknüpft eine weitere CSS-Datei 'login.css' -->
-  <meta charset="utf-8">                             <!-- Definiert den Zeichensatz als UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stellt sicher, dass die Seite auf mobilen Geräten korrekt skaliert wird -->
-  <title>Trust Bärn - FAQ</title>                    <!-- Der Titel der Seite, der im Browser-Tab angezeigt wird -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Verknüpft die CSS-Datei 'style.css' -->
+  <link rel="stylesheet" href="css/login.css"> <!-- Verknüpft eine weitere CSS-Datei 'login.css' -->
+  <meta charset="utf-8"> <!-- Definiert den Zeichensatz als UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stellt sicher, dass die Seite auf mobilen Geräten korrekt skaliert wird -->
+  <title>Trust Bärn - FAQ</title> <!-- Der Titel der Seite, der im Browser-Tab angezeigt wird -->
 </head>
 
 
@@ -39,49 +40,48 @@
     </ul>
   </nav>
 
-  <div class="hamburger-menu"> 
-    <input type="checkbox" hidden id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">
-      <span class="navicon"></span>
-    </label>
-    <div class="menu">
-      <a href="index.html">Home</a>
-      <a href="infos.html">Infos</a>
-      <div class="submenu">
+  <main class="wrapper">
+    <div class="hamburger-menu">
+      <input type="checkbox" hidden id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+        <span class="navicon"></span>
+      </label>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="infos.html">Infos</a>
         <a href="ueber_uns.html">Über uns</a>
-        <!-- <div class="submenu-content">
-          <a href="#">Partnerschaften</a>
-        </div> -->
-        </div>
         <a href="aktuelles.html">Aktuelles</a>
-      <a href="contact.html">Kontakt</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
     </div>
-  </div>  
 
-  <main class="wrapper">                                                <!-- Der Hauptbereich der Seite, wird durch die Klasse 'wrapper' gestylt -->
-   <div class="login-box">                                              <!-- Container für das Login-Formular -->
-     <h1>Login</h1>                                                     <!-- Titel des Login-Formulars -->
-   <form action="login-process.php" method="POST">                      <!-- Das Formular, das die Benutzerdaten an 'login-process.php' sendet. Die Methode 'POST' bedeutet, dass die Daten sicher übermittelt werden -->
-     <div class="input-group">                                          <!-- Container für das Eingabefeld für den Benutzernamen -->
-        <label for="username">Benutzername:</label>                     <!-- Beschriftung des Eingabefeldes für den Benutzernamen -->
-          <input type="text" id="username" name="username" required>    <!-- Eingabefeld für den Benutzernamen. 'required' bedeutet, dass dieses Feld ausgefüllt werden muss -->
+    <!-- Der Hauptbereich der Seite, wird durch die Klasse 'wrapper' gestylt -->
+    <div class="login-box"> <!-- Container für das Login-Formular -->
+      <h1>Login</h1> <!-- Titel des Login-Formulars -->
+      <form action="login-process.php" method="POST">
+        <!-- Das Formular, das die Benutzerdaten an 'login-process.php' sendet. Die Methode 'POST' bedeutet, dass die Daten sicher übermittelt werden -->
+        <div class="input-group"> <!-- Container für das Eingabefeld für den Benutzernamen -->
+          <label for="username">Benutzername:</label> <!-- Beschriftung des Eingabefeldes für den Benutzernamen -->
+          <input type="text" id="username" name="username" required>
+          <!-- Eingabefeld für den Benutzernamen. 'required' bedeutet, dass dieses Feld ausgefüllt werden muss -->
         </div>
-     <div class="input-group">                                          <!-- Container für das Eingabefeld für das Passwort -->
-          <label for="password">Passwort:</label>                       <!-- Beschriftung des Eingabefeldes für das Passwort -->
-          <input type="password" id="password" name="password" required><!-- Eingabefeld für das Passwort. 'required' bedeutet, dass dieses Feld ebenfalls ausgefüllt werden muss -->
+        <div class="input-group"> <!-- Container für das Eingabefeld für das Passwort -->
+          <label for="password">Passwort:</label> <!-- Beschriftung des Eingabefeldes für das Passwort -->
+          <input type="password" id="password" name="password"
+            required><!-- Eingabefeld für das Passwort. 'required' bedeutet, dass dieses Feld ebenfalls ausgefüllt werden muss -->
         </div>
-      <button type="submit" class="submit-button-login">Einloggen</button>  <!-- Der Absenden-Button für das Formular, der mit der Klasse 'submit-button-login' gestylt ist -->
+        <button type="submit" class="submit-button-login">Einloggen</button>
+        <!-- Der Absenden-Button für das Formular, der mit der Klasse 'submit-button-login' gestylt ist -->
       </form>
     </div>
-  
   </main>
-  
+
 
   <footer>
     <div class="footer-content">
       <div class="footer-section">
         <h2>Über uns</h2>
-        <p>Trust Bärn ist eine Initiative zur Stärkung der Gemeinschaft und Sicherheit in Bern.</p>
+        <p>Trust Bärn ist eine Initiative zur Stärkung <br> der Gemeinschaft und Sicherheit in Bern.</p>
       </div>
       <div class="footer-section">
         <h2>Nützliche Links</h2>
