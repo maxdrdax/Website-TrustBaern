@@ -134,3 +134,17 @@ h2 {
 
 }
 
+@media (max-width: 360px) {
+  .kategorie {
+    font-size: 0.8rem;
+  }
+
+  .titel {
+    font-size: 1.1rem;
+  }
+
+  .grosse_nachricht, .kleine_nachricht, .grosse_nachricht_vertikal {
+    overflow: hidden;
+  }
+
+}
