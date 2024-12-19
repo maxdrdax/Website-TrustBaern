@@ -1,76 +1,84 @@
+/* Kontaktformular */
+
 .contact-form {
-    background-color: rgba(0, 0, 0, 0.2);        /* Der Hintergrund ist ein halbtransparentes Schwarz 20% Deckkkraft */
-    color: var(--lightblue);                       /* Textfarbe wird mit einer CSS-Variablen definiert */
-    border: 2px solid white;                     /* Weisser Rahmen mit einer Breite von 2 Pixeln */
-    border-radius: 25px;                           /*Die Ecken des Rahmens sind abgerundet (Radius: 25px) */
-    padding: 40px 30px;                            /* Innenabstand (Abstand von Schrift zu Box), 40px oben/unten, 30px links/rechts */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);   /* Ein Schatteneffekt mit leichter Transparenz 20% */
-    margin: 0 auto;                                /*Zentriert das Formular horizontal im übergeordneten Container*/
-    width: 50%;                                    /* Die Breite des Formulars beträgt 50% der Elternkomponente */
-    }
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Der Hintergrund ist ein halbtransparentes Schwarz 20% Deckkkraft */
+    color: var(--lightblue);
+    /* Textfarbe wird mit einer CSS-Variablen definiert */
+    border: 2px solid white;
+    /* Weisser Rahmen mit einer Breite von 2 Pixeln */
+    border-radius: 25px;
+    /*Die Ecken des Rahmens sind abgerundet (Radius: 25px) */
+    padding: 40px 30px;
+    /* Innenabstand (Abstand von Schrift zu Box), 40px oben/unten, 30px links/rechts */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Ein Schatteneffekt mit leichter Transparenz 20% */
+    margin: 0 auto;
+    /*Zentriert das Formular horizontal im übergeordneten Container*/
+    width: 50%;
+    /* Die Breite des Formulars beträgt 50% der Elternkomponente */
+}
 
 .contact-container {
-    display: grid;                                /*Das Layout wird als Raster definiert*/
-    grid-template-columns: repeat(2, 1fr);        /* Zwei gleich grosse Spalten */
-    grid-template-rows: auto;                     /* Die Zeilenhöhe wird automatisch an den Inhalt angepasst */
-    row-gap: 1em;                                 /* Abstand zwischen den Zeilen beträgt 1em (16px), Anzahl px in em kann selber definiert werden, gibt auch vw (Layout abhängig von Seitenbreite dann)*/
-    column-gap: 0.5em;                           /* Abstand zwischen den Spalten beträgt 0.5em */
-    background-color: var(--background-color);  /* Hintergrundfarbe wird mit der CSS-Variabel definiert */
-    border-radius: 8px;                          /* Ecken sind leicht abgerundet (8px) */
+    display: grid;
+    /*Das Layout wird als Raster definiert*/
+    grid-template-columns: repeat(2, 1fr);
+    /* Zwei gleich grosse Spalten */
+    grid-template-rows: auto;
+    /* Die Zeilenhöhe wird automatisch an den Inhalt angepasst */
+    row-gap: 1em;
+    /* Abstand zwischen den Zeilen beträgt 1em (16px), Anzahl px in em kann selber definiert werden, gibt auch vw (Layout abhängig von Seitenbreite dann)*/
+    column-gap: 0.5em;
+    /* Abstand zwischen den Spalten beträgt 0.5em */
+    background-color: var(--background-color);
+    /* Hintergrundfarbe wird mit der CSS-Variabel definiert */
+    border-radius: 8px;
+    /* Ecken sind leicht abgerundet (8px) */
 }
 
-#vorname {
-    grid-column: 1 / 2;                   /* Diese beiden Sachen definieren die Position jedes Elements im Raster, Bsp. #vorname ist in der ersten Spalte und ersten Zeile  */
-    grid-row: 1 / 2;
-}
-
-#email {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-#telefon {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-#betreff {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-#nachricht {
+.contact-container textarea {
     grid-column: 1 / 3;
+    /* Textfeld nimmt beide Spalten ein */
     grid-row: 3 / 4;
+    /* Textfeld nimmt die dritte Zeile ein */
 }
 
 
 #kontaktieren_ueberschrift {
     color: var(--yellow);
-    margin: 0 0 1em 0;              /*Kein Aussenabstand oben/rechts/links, dafür 1em unten  */
-    display: flex;                  /* ermöglicht flexibles Layout für die Überschrift */
+    margin: 0 0 1em 0;
+    /*Kein Aussenabstand oben/rechts/links, dafür 1em unten  */
+    display: flex;
+    /* ermöglicht flexibles Layout für die Überschrift */
 }
 
 .contact-container input,
 .contact-container textarea {
     background: none;
     color: white;
-    border: 1px solid white;      /* Weisser Rahmen mit 1px Breite */
-    border-radius: 5px;             /* Ecken sind leicht abgerundet 5px */
-    padding: 10px;                  /* Innenabstand von 10px */
-    font-size: 1rem;                /* Schriftgrösse von 1rem (rem ermöglicht Barrierefreiheit durch die Anpassung der Seite an nutzerspezifische Einstellungen wie Browserschriftgrösse und Zoom. */
-    width: 100%;                    /* Eingaben füllen ihren Container vollständig aus */
-    box-sizing: border-box;         /*Rahmen und Innenabstand werden in der Breitenberechnung berücksichtigt  */
+    border: 1px solid white;
+    /* Weisser Rahmen mit 1px Breite */
+    border-radius: 5px;
+    /* Ecken sind leicht abgerundet 5px */
+    padding: 10px;
+    /* Innenabstand von 10px */
+    font-size: 1rem;
+    /* Schriftgrösse von 1rem (rem ermöglicht Barrierefreiheit durch die Anpassung der Seite an nutzerspezifische Einstellungen wie Browserschriftgrösse und Zoom. */
+    width: 100%;
+    /* Eingaben füllen ihren Container vollständig aus */
+    box-sizing: border-box;
+    /*Rahmen und Innenabstand werden in der Breitenberechnung berücksichtigt  */
     min-width: 75px;
 }
 
 .contact-container textarea {
-    resize: none;                  /* Benutzer:innen können die Grösse des Textbereichs nicht ändern */
+    resize: none;
+    /* Benutzer:innen können die Grösse des Textbereichs nicht ändern */
 }
 
-placeholder {
+::placeholder {
     color: white;
-    font-family:'Dm Mono Light';
+    font-family: 'Dm Mono Light';
     opacity: 0.7;
 }
 
@@ -82,10 +90,14 @@ placeholder {
     border-radius: 5px;
     font-family: 'Din Alternate';
     font-size: 1rem;
-    text-decoration: none;         /* Kein Unterstrich im Text */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Farbwechsel beim Hover (3 Sekunden Übergang) */
-    display: block;                                          /* Schaltfläche wird als Blockelement angezeigt */
-    width: fit-content ;                                     /*  Breite beträgt 50% des Elterncontainers*/
+    text-decoration: none;
+    /* Kein Unterstrich im Text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Farbwechsel beim Hover (3 Sekunden Übergang) */
+    display: block;
+    /* Schaltfläche wird als Blockelement angezeigt */
+    width: fit-content;
+    /*  Breite beträgt 50% des Elterncontainers*/
     box-shadow: none;
 }
 
@@ -94,26 +106,26 @@ placeholder {
     color: var(--yellow);
 }
 
-/*Responsive für Mobile-Geräte ab 360px*/
+/* Responsive Design */
 
-@media (max-width: 1500px) { /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
-   
+@media (max-width: 1500px) {
+    /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
+
     .contact-container {
         display: block;
     }
 
-.contact-container input, .contact-container textarea {
-    margin: 0.5em 0;
+    .contact-container input,
+    .contact-container textarea {
+        margin: 0.5em 0;
+    }
 }
-}
 
-
-
-@media (max-width: 768px) { /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
+@media (max-width: 768px) {
+    /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
 
     .contact-form {
         box-sizing: border-box;
         width: 100%;
     }
 }
-    

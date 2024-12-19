@@ -1,79 +1,110 @@
-
+/* Login Formular */
 
 .login-box {
-    background-color: rgba(0, 0, 0, 0.2); /* Hintergrundfarbe mit transparenter schwarzer Farbe */
-    color: var(--lightblue);               /* Textfarbe wird von der CSS-Variable 'lightblue' übernommen */
-    border: 2px solid white;               /* Fügt einen 2px dicken weißen Rand hinzu */
-    border-radius: 25px;                   /* Abgerundete Ecken mit einem Radius von 25px */
-    padding: 40px 30px;                    /* Innenabstand: 40px oben und unten, 30px links und rechts */
-    width: 35%;                            /* Die Breite der Box beträgt 30% des übergeordneten Containers */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Fügt einen Schatten hinzu: 5px nach unten, 15px Unschärfe, leicht transparente schwarze Farbe */
-    margin: 0 auto;                        /* Zentriert die Box horizontal, indem der linke und rechte Rand automatisch zugewiesen wird */
-  }
-  
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Hintergrundfarbe mit transparenter schwarzer Farbe */
+  color: var(--lightblue);
+  /* Textfarbe wird von der CSS-Variable 'lightblue' übernommen */
+  border: 2px solid white;
+  /* Fügt einen 2px dicken weißen Rand hinzu */
+  border-radius: 25px;
+  /* Abgerundete Ecken mit einem Radius von 25px */
+  padding: 40px 30px;
+  /* Innenabstand: 40px oben und unten, 30px links und rechts */
+  width: 35%;
+  /* Die Breite der Box beträgt 30% des übergeordneten Containers */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Fügt einen Schatten hinzu: 5px nach unten, 15px Unschärfe, leicht transparente schwarze Farbe */
+  margin: 0 auto;
+  /* Zentriert die Box horizontal, indem der linke und rechte Rand automatisch zugewiesen wird */
+}
 
-  .login-box h1 {
-    color: var(--yellow);             /* Textfarbe wird auf die benutzerdefinierte Variable 'yellow' gesetzt */
-    font-family: 'Dm Mono Light';     /* Schriftart für den Text wird auf 'Dm Mono Light' gesetzt */
-    margin-bottom: 20px;              /* Fügt einen Abstand von 20px unter dem 'h1' hinzu */
-    font-size: 1.8rem;                /* Schriftgröße wird auf 1.8rem festgelegt */
-    margin-top: 0;                    /* Entfernt den Abstand oben, sodass das 'h1' direkt am oberen Rand anliegt */
-  }
-  
+
+.login-box h1 {
+  color: var(--yellow);
+  /* Textfarbe wird auf die benutzerdefinierte Variable 'yellow' gesetzt */
+  font-family: 'Dm Mono Light';
+  /* Schriftart für den Text wird auf 'Dm Mono Light' gesetzt */
+  margin-bottom: 20px;
+  /* Fügt einen Abstand von 20px unter dem 'h1' hinzu */
+  font-size: 1.8rem;
+  /* Schriftgröße wird auf 1.8rem festgelegt */
+  margin-top: 0;
+  /* Entfernt den Abstand oben, sodass das 'h1' direkt am oberen Rand anliegt */
+}
+
 
 .input-group {
-margin-bottom: 15px;
-text-align: left;
+  margin-bottom: 15px;
+  text-align: left;
 }
 
 .input-group label {
-display: block;
-margin-bottom: 5px;
-font-size: 1rem;
-color: var(--lightblue);
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: var(--lightblue);
 }
 
 .input-group input {
-    background: none;                    /* Kein Hintergrund für das Eingabefeld */
-    border: 1px solid white;             /* Weißer Rand mit einer Dicke von 1px */
-    color: var(--lightblue);              /* Textfarbe des Eingabefelds wird auf die benutzerdefinierte Variable 'lightblue' gesetzt */
-    border-radius: 5px;                  /* Abgerundete Ecken mit einem Radius von 5px */
-    padding: 10px;                        /* Innenabstand von 10px in alle Richtungen (oben, rechts, unten, links) */
-    font-size: 1rem;                      /* Schriftgröße wird auf 1rem festgelegt */
-    width: 100%;                          /* Breite des Eingabefelds beträgt 100% des übergeordneten Containers */
-    box-sizing: border-box;              /* Berücksichtigt den Border- und Padding-Wert bei der Berechnung der Breite und Höhe */
-  }
-  
+  background: none;
+  /* Kein Hintergrund für das Eingabefeld */
+  border: 1px solid white;
+  /* Weißer Rand mit einer Dicke von 1px */
+  color: var(--lightblue);
+  /* Textfarbe des Eingabefelds wird auf die benutzerdefinierte Variable 'lightblue' gesetzt */
+  border-radius: 5px;
+  /* Abgerundete Ecken mit einem Radius von 5px */
+  padding: 10px;
+  /* Innenabstand von 10px in alle Richtungen (oben, rechts, unten, links) */
+  font-size: 1rem;
+  /* Schriftgröße wird auf 1rem festgelegt */
+  width: 100%;
+  /* Breite des Eingabefelds beträgt 100% des übergeordneten Containers */
+  box-sizing: border-box;
+  /* Berücksichtigt den Border- und Padding-Wert bei der Berechnung der Breite und Höhe */
+}
 
-  .submit-button-login {
-    background-color: var(--yellow);          /* Hintergrundfarbe wird von der benutzerdefinierten CSS-Variable 'yellow' gesetzt */
-    color: var(--pink);                       /* Textfarbe wird von der benutzerdefinierten CSS-Variable 'pink' gesetzt */
-    padding: 10px 20px;                       /* Innenabstand von 10px oben und unten, 20px rechts und links */
-    border: none;                             /* Entfernt den Standardrand des Buttons */
-    border-radius: 5px;                       /* Abgerundete Ecken mit einem Radius von 5px */
-    cursor: pointer;                          /* Zeigt einen Handzeiger-Cursor, wenn der Button hover wird */
-    font-size: 1rem;                          /* Schriftgröße des Textes im Button wird auf 1rem gesetzt */
-    transition: background-color 0.3s, color 0.3s; /* Fügt eine Übergangsanimation für Hintergrundfarbe und Textfarbe hinzu */
-  }
-  
+
+.submit-button-login {
+  background-color: var(--yellow);
+  /* Hintergrundfarbe wird von der benutzerdefinierten CSS-Variable 'yellow' gesetzt */
+  color: var(--pink);
+  /* Textfarbe wird von der benutzerdefinierten CSS-Variable 'pink' gesetzt */
+  padding: 10px 20px;
+  /* Innenabstand von 10px oben und unten, 20px rechts und links */
+  border: none;
+  /* Entfernt den Standardrand des Buttons */
+  border-radius: 5px;
+  /* Abgerundete Ecken mit einem Radius von 5px */
+  cursor: pointer;
+  /* Zeigt einen Handzeiger-Cursor, wenn der Button hover wird */
+  font-size: 1rem;
+  /* Schriftgröße des Textes im Button wird auf 1rem gesetzt */
+  transition: background-color 0.3s, color 0.3s;
+  /* Fügt eine Übergangsanimation für Hintergrundfarbe und Textfarbe hinzu */
+}
+
 
 .submit-button-login:hover {
-background-color: var(--pink);
-color: var(--yellow);
+  background-color: var(--pink);
+  color: var(--yellow);
 }
 
-@media (max-width: 1500px) { /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
+@media (max-width: 1500px) {
+  /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
 
-  .login-box{
-      box-sizing: border-box;
-      width: 60%;
+  .login-box {
+    box-sizing: border-box;
+    width: 60%;
   }
 }
 
-@media (max-width: 768px) { /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
+@media (max-width: 768px) {
+  /*bei einer Breite unter 1500px wird dieses Verhalten angewendet: Verhalten Felder in Rows+Columns, Font Sizes*/
 
-  .login-box{
-      box-sizing: border-box;
-      width: 100%;
+  .login-box {
+    box-sizing: border-box;
+    width: 100%;
   }
 }

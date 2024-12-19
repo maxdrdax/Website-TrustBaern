@@ -2,21 +2,22 @@
 <html lang="de">
 
 <head>
-  <link rel="stylesheet" href="css/style.css"> <!-- Verknüpft eine externe CSS-Datei, die die Hauptgestaltung der Webseite enthält -->
- <link rel="stylesheet" href="css/contact.css"> <!-- Verknüpft eine weitere CSS-Datei, die spezifische Stile für die Kontaktseite enthält -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Verknüpft eine externe CSS-Datei, die die Hauptgestaltung der Webseite enthält -->
+  <link rel="stylesheet" href="css/contact.css">
+  <!-- Verknüpft eine weitere CSS-Datei, die spezifische Stile für die Kontaktseite enthält -->
   <meta charset="utf-8"> <!-- Legt das Zeichen-Encoding auf UTF-8 fest, um Sonderzeichen korrekt darzustellen -->
   <title>Trust Bärn</title> <!-- Der Titel der Webseite der im Brwoser-Tab angezeigt wird -->
 </head>
 
 <body>
- 
+
   <header>
     <div class="logo-header">
       <a href="index.html">
         <img src="img/Logo_TrustBaern.svg" width="15%">
       </a>
     </div>
-
     <div class="login-button">
       <a href="login.html" class="button">Login</a>
     </div>
@@ -38,9 +39,7 @@
     </ul>
   </nav>
 
-
   <main class="wrapper"> <!-- Hauptinhalt der Seite  -->
-
     <div class="hamburger-menu">
       <input type="checkbox" hidden id="menu-toggle">
       <label for="menu-toggle" class="menu-icon">
@@ -55,24 +54,21 @@
       </div>
     </div>
 
-    <div class="contact-form"> <!-- Bereich für das Kontaktformular -->  
+    <div class="contact-form"> <!-- Bereich für das Kontaktformular -->
       <h2 id="kontaktieren_ueberschrift">Kontaktiere uns</h2>
       <form class="contact-container" action="#" method="post"> <!-- Ein Formular, das Nutzereingaben entgegennimmt -->
-        <input type="text" id="vorname" name="vorname" placeholder="Name/Vorname"> <!-- Eingabefelder für Benutzerinformationen -->
-
-        <input type="email" id="email" name="email" placeholder="E-Mail" required>
-
-        <input type="tel" id="telefon" name="telefon" placeholder="Telefon" required>
-        <input type="text" id="betreff" name="betreff" placeholder="Betreff">
-
-        <textarea id="nachricht" name="nachricht" placeholder="Nachricht" required></textarea> <!--Textbereich für eine längere Nachricht  -->
+        <input type="text" name="vorname" placeholder="Name/Vorname">
+        <!-- Eingabefelder für Benutzerinformationen -->
+        <input type="email" name="email" placeholder="E-Mail" required>
+        <input type="tel" name="telefon" placeholder="Telefon" required>
+        <input type="text" name="betreff" placeholder="Betreff">
+        <textarea id="nachricht" name="nachricht" placeholder="Nachricht" required></textarea>
+        <!--Textbereich für eine längere Nachricht  -->
 
         <button class="submit-button" type="submit">Senden</button>
       </form>
     </div>
   </main>
-  
-
 
   <footer>
     <div class="footer-content">
@@ -95,9 +91,10 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2023 Trust Bärn. Alle Rechte vorbehalten.</p>
+      <p>&copy; 2024 Trust Bärn. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
+
 </body>
 
 </html>

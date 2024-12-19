@@ -1,165 +1,218 @@
-/* Ueber uns */
+/* Wer sind wir */
 
-.ueber_uns { 
-  display: grid;/* Legt fest, dass das Element .ueber_uns ein CSS Grid-Container ist. Innerhalb dieses Containers können Inhalte (Kinder-Elemente) in einem Raster organisiert werden. */
-  grid-template-columns: repeat(12, 1fr); /* Definiert die Spaltenstruktur des Grids: Das Grid hat 12 gleich breite Spalten 1fr steht für eine proportionale Einheit des verfügbaren Platzes (Fractional Unit). Alle 12 Spalten teilen sich den Platz gleichmäßig. wenn man individuell möchte, dann repeat weg und prozent zahlenb nacheinander mit Leerschlag . */
-  grid-template-rows: auto;  /* Definiert die Reihenstruktur des Grids: Jede Zeile passt sich automatisch (auto) der Höhe ihres Inhalts an. */
+.ueber_uns {
+  display: grid;
+  /* Legt fest, dass das Element .ueber_uns ein CSS Grid-Container ist. Innerhalb dieses Containers können Inhalte (Kinder-Elemente) in einem Raster organisiert werden. */
+  grid-template-columns: repeat(12, 1fr);
+  /* Definiert die Spaltenstruktur des Grids: Das Grid hat 12 gleich breite Spalten 1fr steht für eine proportionale Einheit des verfügbaren Platzes (Fractional Unit). Alle 12 Spalten teilen sich den Platz gleichmäßig. wenn man individuell möchte, dann repeat weg und prozent zahlenb nacheinander mit Leerschlag . */
+  grid-template-rows: auto;
+  /* Definiert die Reihenstruktur des Grids: Jede Zeile passt sich automatisch (auto) der Höhe ihres Inhalts an. */
   width: 100%;
-  grid-column-gap: 3em; /* Legt den horizontalen Abstand (Zwischenraum) zwischen den Spalten des Grids auf */
-  grid-row-gap: 5em;/* Legt den vertikalen Abstand (Zwischenraum) zwischen den Reihen des Grids auf 5em fest. */
-  margin-bottom: 6em;/*  Fügt einen Abstand von 3em unterhalb des Containers hinzu. Dadurch entsteht ein Abstand zum nächsten Element unter dem .ueber_uns. */
+  grid-column-gap: 3em;
+  /* Legt den horizontalen Abstand (Zwischenraum) zwischen den Spalten des Grids auf */
+  grid-row-gap: 5em;
+  /* Legt den vertikalen Abstand (Zwischenraum) zwischen den Reihen des Grids auf 5em fest. */
+  margin-bottom: 6em;
+  /*  Fügt einen Abstand von 3em unterhalb des Containers hinzu. Dadurch entsteht ein Abstand zum nächsten Element unter dem .ueber_uns. */
 }
 
-  .wrapper h1 { 
-    margin: 0 0 1em 0;/* Der obere und linke Rand (margin-top und margin-left) sind auf 0 gesetzt, deer untere Rand (margin-bottom) beträgt 1em um Platz unter der Überschrift zu schaffen  */
+.wrapper h1 {
+  margin: 0 0 1em 0;
+  /* Der obere und linke Rand (margin-top und margin-left) sind auf 0 gesetzt, deer untere Rand (margin-bottom) beträgt 1em um Platz unter der Überschrift zu schaffen  */
+}
+
+.wer_sind_wir {
+  grid-column: 1 / 6;
+}
+
+.ueber_uns img {
+  width: 100%;
+  /* Die Höhe des Bildes beträgt 90% des verfügbaren Platzes */
+}
+
+.wer_sind_wir img {
+  margin-bottom: 2em;
+}
+
+/* Geschichte */
+
+.geschichte {
+  grid-column: 6 / 13;
+  /* Dieses Element nimmt die Spalten 6-12 (exklusive 13) im Grid ein */
+}
+
+.wer_sind_wir,
+.geschichte {
+  box-sizing: border-box;
+  /* Innenabstand und Rahmen werden in die Gesamtgrösse einberechnet */
+  height: 100%;
+}
+
+.geschichte img {
+  margin: 4em 0 4em 0;
+  /* Oberer und unterer Rand */
+}
+
+#partner {
+  margin-top: 5em;
+  /* Das Element hat einen oberen Abstand von 5em */
+  color: var(--yellow);
+}
+
+/* Team Vorstellung */
+
+.team-grid {
+  display: grid;
+  /* Das Element wird zu einem Grid Container */
+  grid-template-columns: repeat(4, 1fr);
+  /* Das Grid besteht aus drei gleich breiten Spalten */
+  grid-template-rows: 25vw 25vw;
+  /* Das Grid besteht aus zwei gleich hohen Reihen */
+  grid-column-gap: 3em;
+  /* Der horizontale Abstand zwischen den Spalten beträgt 3% */
+  grid-row-gap: 3em;
+  /* Der vertikale Abstand zwischen den Spalten beträgt 3% */
+  vertical-align: center;
+  /* Inhalte innerhalb des Grids werden vertikal zentriert */
+}
+
+.wrapper h1 {
+  text-align: center;
+  /*  Der Text wird horizontal zentriert*/
+}
+
+.team-member {
+  position: relative;
+  /* Ermöglicht die Positionierung von absoluten Elementen innerhalb des Blocks */
+  text-align: center;
+  /*Der Text wird horizontal zentriert  */
+  padding: 10px;
+  /*innenabstand von 10px  */
+  border: inline;
+  /* Die Border wird innerhlab des Eleemnts gerechnet */
+  border: 1px solid var(--lightblue);
+  /* Ein 1px breiter Rahmen */
+  border-radius: 10px;
+  /* Die Ecken sind mit einem Rahmen von 10px abgerundet */
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0;
+  /*Kein äusserer Abstand  */
+  padding: 2em;
+  /* Innenabstand von 2em */
+  width: 100%;
+  /* Das Element nimmt die volle Breite seines Containers ein */
+  height: 100%;
+  /* Das Element nimmt die volle Höhe seines Containers ein */
+  box-sizing: border-box;
+  /* Innenabstand und Rahmen werden in die Gesamtgrösse einberechnet */
+}
+
+.team-member img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  /*Das Bild wird skaliert, um den Container vollständig auszufüllen, ohne das Seitenverhältnis zu verändern  */
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  color: var(--yellow);
+  margin: 1.3em 0 0 0;
+  /* Der obere Rand beträgt 0.5em, alle anderen Ränder sind 0 */
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: var(--lightblue);
+  margin: 0.5em 0 0 0;
+  /* Der obere Rand beträgt 0.5em, alle anderen Ränder sind 0 */
+}
+
+.team-grid a {
+  text-decoration: none;
+  /* Entfernt die Standart-Unterstreichung bei Links */
+}
+
+.team-member:hover .mail_overlay {
+  position: absolute;
+  /*Das Overlay wird relativ zu seinem Elternteil positioniert  */
+  z-index: 1;
+  /* Das Overlay wird vor anderen Inhalten angezeigt */
+  top: 0;
+  left: 0;
+  /* Das Overlay beginnt in der oberen linken Ecke des Elternteils */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(226, 55, 127, 0.5);
+  box-sizing: border-box;
+  /* Innenabstand und Rahmen werden in die Gesamtgrösse einberechnet */
+  transition: all 0.5s ease;
+  /* Eine Übergangsanimation von 0.5 Sekunden mit gleichmässiger Beschleunigung wird angewandt */
+  border-radius: 10px;
+  /* Die Ecken des Overlays sind abgerundet */
+}
+
+.team-member:hover {
+  transition: transform 0.3s ease;
+  /* Eine glatte Transformations-Animation von 0.3sec */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /*Ein Schatten wird hinzugefügt um den Hover-Effekt hervorzuheben  */
+  border: 1px solid var(--yellow);
+}
+
+#partner {
+  color: var(--yellow);
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+  grid-column-gap: 3em;
+  grid-row-gap: 5em;
+}
+
+.logo {
+  max-width: 80%;
+  max-height: 100%;
+  margin: auto auto;
+  /* Das Logo wird sowohl horizontal als auch vertikal zentriert */
+}
+
+@media (max-width: 1500px) {
+  .ueber_uns {
+    display: block;
+    /* Das Grid wird in ein Block-Element umgewandelt */
   }
-  
 
-
-  .wer_sind_wir {
-    grid-column: 1 / 6;
-  }
-
- .ueber_uns img {
-    width: 100%; /* Die Höhe des Bildes beträgt 90% des verfügbaren Platzes */
+  .ueber_uns img {
+    display: block;
+    /* Das Bild wird in ein Block-Element umgewandelt */
+    margin: 3em auto;
+    /* Das Bild wird horizontal zentriert */
   }
 
   .wer_sind_wir img {
-    margin-bottom: 2em;
+    width: 50%;
   }
 
-  .geschichte {
-    grid-column: 6 / 13; /* Dieses Element nimmt die Spalten 6-12 (exklusive 13) im Grid ein */
+  .wer_sind_wir {
+    margin-bottom: 5em;
   }
 
-  .wer_sind_wir, .geschichte {
-    box-sizing: border-box; /* Innenabstand und Rahmen werden in die Gesamtgrösse einberechnet */
-    height: 100%;
-  }
-
-  .geschichte img {
-     margin: 4em 0 4em 0; /* Oberer und unterer Rand */
-  }
-  
-  #partner {
-    margin-top: 5em; /* Das Element hat einen oberen Abstand von 5em */
-    color: var(--yellow);
-  }
-  
   .team-grid {
-    display: grid; /* Das Element wird zu einem Grid Container */
-    grid-template-columns: repeat(4, 1fr); /* Das Grid besteht aus drei gleich breiten Spalten */
-    grid-template-rows: 25vw 25vw; /* Das Grid besteht aus zwei gleich hohen Reihen */
-    grid-column-gap: 3em; /* Der horizontale Abstand zwischen den Spalten beträgt 3% */
-    grid-row-gap: 3em;/* Der vertikale Abstand zwischen den Spalten beträgt 3% */
-    vertical-align: center; /* Inhalte innerhalb des Grids werden vertikal zentriert */
+    grid-template-columns: repeat(2, 1fr);
+    /* Das Grid besteht aus zwei gleich breiten Spalten */
+    grid-template-rows: repeat(2, 1fr);
+    /* Das Grid besteht aus zwei gleich hohen Reihen */
   }
 
-  .wrapper h1 {
-    text-align: center; /*  Der Text wird horizontal zentriert*/
-  }
-  
-  .team-member {
-    position: relative; /* Ermöglicht die Positionierung von absoluten Elementen innerhalb des Blocks */
-    text-align: center; /*Der Text wird horizontal zentriert  */
-    padding: 10px; /*innenabstand von 10px  */
-    border: inline; /* Die Border wird innerhlab des Eleemnts gerechnet */
-    border: 1px solid var(--lightblue); /* Ein 1px breiter Rahmen */
-    border-radius: 10px;/* Die Ecken sind mit einem Rahmen von 10px abgerundet */
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 0; /*Kein äusserer Abstand  */
-    padding: 2em; /* Innenabstand von 2em */
-    width: 100%; /* Das Element nimmt die volle Breite seines Containers ein */
-    height: 100%; /* Das Element nimmt die volle Höhe seines Containers ein */
-    box-sizing: border-box; /* Innenabstand und Rahmen werden in die Gesamtgrösse einberechnet */
-  }
-  
-  .team-member img {
-    width: 90%;
-    height: 80%;
-    object-fit: cover; /*Das Bild wird skaliert, um den Container vollständig auszufüllen, ohne das Seitenverhältnis zu verändern  */
-  }
-  
-  .team-member h3 {
-    font-size: 1.2rem;
-    color: var(--yellow);
-    margin: 1.3em 0 0 0; /* Der obere Rand beträgt 0.5em, alle anderen Ränder sind 0 */
-  }
-  
-  .team-member p {
-    font-size: 1rem;
-    color: var(--lightblue);
-    margin: 0.5em 0 0 0; /* Der obere Rand beträgt 0.5em, alle anderen Ränder sind 0 */
-  }
-  
-  .team-grid a {
-    text-decoration: none; /* Entfernt die Standart-Unterstreichung bei Links */
-  }
-  
-  .team-member:hover .mail_overlay {
-    position: absolute; /*Das Overlay wird relativ zu seinem Elternteil positioniert  */
-    z-index: 1; /* Das Overlay wird vor anderen Inhalten angezeigt */
-    top: 0;
-    left: 0; /* Das Overlay beginnt in der oberen linken Ecke des Elternteils */
-    width: 100%;
-    height: 100%;
-    background-color: rgba(226, 55, 127, 0.5);
-    box-sizing: border-box; /* Innenabstand und Rahmen werden in die Gesamtgrösse einberechnet */
-    transition: all 0.5s ease;/* Eine Übergangsanimation von 0.5 Sekunden mit gleichmässiger Beschleunigung wird angewandt */
-    border-radius: 10px; /* Die Ecken des Overlays sind abgerundet */
-  }
-  
-  .team-member:hover {
-    transition: transform 0.3s ease; /* Eine glatte Transformations-Animation von 0.3sec */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /*Ein Schatten wird hinzugefügt um den Hover-Effekt hervorzuheben  */
-    border: 1px solid var(--yellow);
-  }
-
-  #partner {
-    color: var(--yellow);
-  }
+  /* Partner */
 
   .partner-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    width: 100%;
-    grid-column-gap: 3em;
-    grid-row-gap: 5em;
-  }
-  
-  .logo {
-    max-width: 80%;
-    max-height: 100%;
-    margin: auto auto; /* Das Logo wird sowohl horizontal als auch vertikal zentriert */
-  }
-  
-  @media (max-width: 1500px) {
-    .ueber_uns {
-      display: block; /* Das Grid wird in ein Block-Element umgewandelt */
-    }
-
-    .ueber_uns img {
-      display: block; /* Das Bild wird in ein Block-Element umgewandelt */
-      margin: 3em auto; /* Das Bild wird horizontal zentriert */
-    }
-
-    .wer_sind_wir img {
-      width: 50%;
-    }
-
-    .wer_sind_wir {
-      margin-bottom: 5em;
-    }
-
-    .team-grid {
-      grid-template-columns: repeat(2, 1fr); /* Das Grid besteht aus zwei gleich breiten Spalten */
-      grid-template-rows: repeat(2, 1fr); /* Das Grid besteht aus zwei gleich hohen Reihen */
-    }
-
-    .partner-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .logo {
@@ -167,41 +220,50 @@
   }
 }
 
-  @media (max-width: 768px) {
+/* Responsive */
 
-    .team-grid {
-      grid-template-columns: 1fr; /* Das Grid besteht aus zwei gleich breiten Spalten */
-      grid-template-rows: repeat(6, 1fr); /* Das Grid besteht aus zwei gleich hohen Reihen */
-    }
+@media (max-width: 768px) {
 
-    .partner-grid {
-      grid-template-columns: repeat(2, 1fr); /* Das Grid besteht aus zwei gleich breiten Spalten */
-      grid-template-rows: repeat(3, 1fr); /* Das Grid besteht aus zwei gleich hohen Reihen */
-    }
-
-    .logo {
-      display: block; /* Das Logo wird in ein Block-Element umgewandelt */
-      width: 70%;
-    }
-
+  .team-grid {
+    grid-template-columns: 1fr;
+    /* Das Grid besteht aus zwei gleich breiten Spalten */
+    grid-template-rows: repeat(6, 1fr);
+    /* Das Grid besteht aus zwei gleich hohen Reihen */
   }
 
-  @media (max-width: 360px) {
-
-    .partner-grid {
-      grid-template-columns: 1fr; /* Das Grid besteht aus zwei gleich breiten Spalten */
-      grid-template-rows: repeat(6, 1fr); /* Das Grid besteht aus zwei gleich hohen Reihen */
-      grid-row-gap: 2em;
-      margin-top: 2em;
-    }
-
-    .team-member h3 {
-      margin: 0;
-      font-size: 1rem;
-    }
-
-    .team-member p {
-      font-size: 0.85rem;
-    }
-
+  .partner-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* Das Grid besteht aus zwei gleich breiten Spalten */
+    grid-template-rows: repeat(3, 1fr);
+    /* Das Grid besteht aus zwei gleich hohen Reihen */
   }
+
+  .logo {
+    display: block;
+    /* Das Logo wird in ein Block-Element umgewandelt */
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .partner-grid {
+    grid-template-columns: 1fr;
+    /* Das Grid besteht aus zwei gleich breiten Spalten */
+    grid-template-rows: repeat(6, 1fr);
+    /* Das Grid besteht aus zwei gleich hohen Reihen */
+    grid-row-gap: 2em;
+    margin-top: 2em;
+  }
+
+  .team-member h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .team-member p {
+    font-size: 0.85rem;
+  }
+
+}

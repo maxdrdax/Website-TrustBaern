@@ -1,6 +1,8 @@
+/* Grid mit Newsbeiträgen */
+
 .alle_nachrichten {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 15vw;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
@@ -59,7 +61,8 @@
   margin-right: 15px;
   border-radius: 5px;
   align-items: center;
-  max-width: 250px;}
+  max-width: 250px;
+}
 
 h2 {
   margin: 0;
@@ -79,8 +82,10 @@ h2 {
   border-radius: 25px;
 }
 
+/* Responsive */
+
 @media (max-width: 1530px) {
-  
+
   .alle_nachrichten {
     grid-template-columns: 49% 49%;
     grid-auto-rows: 30vw;
@@ -104,7 +109,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  
+
   .alle_nachrichten {
     grid-template-columns: 100%;
     grid-auto-rows: 60vw;
@@ -143,7 +148,9 @@ h2 {
     font-size: 1.1rem;
   }
 
-  .grosse_nachricht, .kleine_nachricht, .grosse_nachricht_vertikal {
+  .grosse_nachricht,
+  .kleine_nachricht,
+  .grosse_nachricht_vertikal {
     overflow: hidden;
   }
 

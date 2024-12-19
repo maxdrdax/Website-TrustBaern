@@ -1,5 +1,4 @@
-/* Fonts*/
-
+/* Einbindungen Fonts */
 
 @font-face {
   /* sagt, dass man Font brauchen kann und auch Nutzende, die die Schrift nicht haben, dass sie es brauchen können */
@@ -25,7 +24,7 @@
 }
 
 
-/* Root*/
+/* Root */
 
 :root {
   /* Wird im allgemeinen benutzt, um Variabeln zu definieren. Unsere Farbbibliothek */
@@ -35,11 +34,7 @@
   --lightblue: rgb(213, 223, 240)
 }
 
-.hamburger-menu {
-  display: none;
-}
-
-/* Layout und Styling*/
+/* Body */
 
 body {
   background-image: url(../img/background.svg);
@@ -112,7 +107,6 @@ a {
 /* Navigation Stylen */
 
 nav {
-  /*Navigation*/
   font-size: 1.5rem;
   margin-bottom: 4em;
   /*Abstand (den Rand) am unteren Ende eines Elements zu steuern zum anderen Element*/
@@ -179,9 +173,11 @@ nav ul li:hover ul {
   /* Stapelelemente ordnen, wenn Elemente übereinander liegen. z.B hier liegt das Element über einem Element mit einem tieferen z-index */
 }
 
+/* Hamburger Menu */
 
-
-/* Grid */
+.hamburger-menu {
+  display: none;
+}
 
 .wrapper {
   display: flex;
@@ -189,6 +185,8 @@ nav ul li:hover ul {
   width: 80%;
   margin: 0 auto;
 }
+
+/* Grid */
 
 .grid {
   /*flexibles Raster*/
@@ -218,7 +216,7 @@ nav ul li:hover ul {
 }
 
 
-/* Home */
+/* Home Content */
 
 h1 {
   /* Hauptüberschrift */
@@ -260,7 +258,6 @@ h1 {
   /* Ausrichtung von Elementen entlang der Querachse (horizontal bei Columns) */
 }
 
-
 .cta {
   /* Call to Action mit Logos und Download Buttons Appstore und Logo Trust Bärn */
   text-align: center;
@@ -298,7 +295,7 @@ h1 {
 }
 
 
-/* Footer stylen */
+/* Footer */
 
 footer {
   width: 100%;
@@ -387,7 +384,8 @@ footer {
 
 @media (max-width: 1530px) {
   .dropdown {
-    display: none;   /* Dropdown Menu ausblenden */
+    display: none;
+    /* Dropdown Menu ausblenden */
   }
 
   .app-icon {
@@ -397,6 +395,10 @@ footer {
   .badge {
     width: 80%;
   }
+
+  .logo-header a img {
+    width: 20%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -404,7 +406,7 @@ footer {
   nav {
     margin-bottom: 0em;
   }
-  
+
   .wrapper {
     flex-direction: column;
     width: 85%;
@@ -439,7 +441,7 @@ footer {
     display: none;
     flex-direction: column;
     align-items: center;
-    
+
   }
 
   .hamburger-menu {
@@ -519,7 +521,8 @@ footer {
     margin: 4em 0;
   }
 
-  .article:first-child {   /* first child wählt den ersten Artikel (erstes Element unter dem überstehenden Element) aus */
+  .article:first-child {
+    /* first child wählt den ersten Artikel (erstes Element unter dem überstehenden Element) aus */
     margin-top: 0;
   }
 
@@ -535,7 +538,9 @@ footer {
     min-width: 10px;
   }
 
-  p, h1, h2 {
+  p,
+  h1,
+  h2 {
     hyphens: auto;
   }
 
@@ -545,7 +550,7 @@ footer {
 
   h1 {
     font-size: 1.5rem;
-  }   
+  }
 
   .article {
     padding: 1em;
