@@ -3,11 +3,9 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Verknüpft eine externe CSS-Datei, die die Hauptgestaltung der Webseite enthält -->
   <link rel="stylesheet" href="css/contact.css">
-  <!-- Verknüpft eine weitere CSS-Datei, die spezifische Stile für die Kontaktseite enthält -->
-  <meta charset="utf-8"> <!-- Legt das Zeichen-Encoding auf UTF-8 fest, um Sonderzeichen korrekt darzustellen -->
-  <title>Trust Bärn</title> <!-- Der Titel der Webseite der im Brwoser-Tab angezeigt wird -->
+  <meta charset="utf-8"> 
+  <title>Trust Bärn</title> 
 </head>
 
 <body>
@@ -39,7 +37,7 @@
     </ul>
   </nav>
 
-  <main class="wrapper"> <!-- Hauptinhalt der Seite  -->
+  <main class="wrapper"> 
     <div class="hamburger-menu">
       <input type="checkbox" hidden id="menu-toggle">
       <label for="menu-toggle" class="menu-icon">
@@ -54,17 +52,14 @@
       </div>
     </div>
 
-    <div class="contact-form"> <!-- Bereich für das Kontaktformular -->
+    <div class="contact-form"> 
       <h2 id="kontaktieren_ueberschrift">Kontaktiere uns</h2>
-      <form class="contact-container" action="#" method="post"> <!-- Ein Formular, das Nutzereingaben entgegennimmt -->
+      <form class="contact-container" action="#" method="post"> 
         <input type="text" name="vorname" placeholder="Name/Vorname">
-        <!-- Eingabefelder für Benutzerinformationen -->
         <input type="email" name="email" placeholder="E-Mail" required>
         <input type="tel" name="telefon" placeholder="Telefon" required>
         <input type="text" name="betreff" placeholder="Betreff">
         <textarea id="nachricht" name="nachricht" placeholder="Nachricht" required></textarea>
-        <!--Textbereich für eine längere Nachricht  -->
-
         <button class="submit-button" type="submit">Senden</button>
       </form>
     </div>

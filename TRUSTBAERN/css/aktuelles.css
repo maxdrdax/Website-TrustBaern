@@ -18,8 +18,6 @@
 .grosse_nachricht {
   grid-column: 2/4;
   grid-row: 1/3;
-  /* Erste Zahl -> wo soll Element beginnen
-  2. Zahl wo soll es aufhören, nach Gitterlinien!*/
 }
 
 .grosse_nachricht_vertikal {

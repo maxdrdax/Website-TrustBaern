@@ -1,42 +1,35 @@
-<!DOCTYPE html> <!-- Ausserhalb der Webseite -->
-<html lang="de"> <!-- Vermerkt die Sprache der Webseite für Barrierefreiheit & Suchmaschinenoptimierung -->
+<!DOCTYPE html> 
+<html lang="de"> 
 
-<head> <!-- Ausserhalb der Seite, alles was im Hintergrund abgelegt ist und mit dem Browser zusammenspielt -->
-  <link rel="stylesheet" href="css/style.css"> <!-- Verlinkung zum CSS sheet -->
+<head> 
+  <link rel="stylesheet" href="css/style.css"> 
   <meta charset="utf-8">
-  <!-- Weitverbreitetes Zeichenformat, alle Symbole integriert in der Codierungsmethode, ist nicht zwingend notwendig weil moderne Geräte es erkennen-->
-  <title>Trust Bärn</title> <!-- wird im Tab angezeigt-->
+  <title>Trust Bärn</title> 
 </head>
 
-<body> <!-- Körper der Webseite -->
-  <header> <!-- Kopfbereich einer Webseite, Titel, Logo und Navigationsmenu oder andere Einführungsinhalte -->
+<body> 
+  <header> 
     <div class="logo-header">
-      <!-- Haben dem Diff direkt eine Klasse gegeben. Container für einen Inhalt, für eine Gruppierung aber ohne weitere Eigenschaften, weiss aber noch nicht wie gross dass es ist etc., wird im CSS durch die Klasse definiert. -->
-      <a href="index.html"> <!-- Wenn man auch das Logo drückt, dann komme ich auf die Startseite zurück -->
+      <a href="index.html"> 
         <img src="img/Logo_TrustBaern.svg" width="15%">
-        <!-- Wie wird der Link dargestellt, Bild gehört zum Link (Auslösebutton um zurück auf die Home zu kommen) -->
       </a>
     </div>
 
-    <div class="login-button"> <!-- Neuer Container mit neuem Element = Login Button oben Rechts -->
+    <div class="login-button"> 
       <a href="login.html" class="button">Login</a>
-      <!-- Link auf Login Seite und haben Klasse gegeben, damit der Button im CSS gestylt werden kann. "Login" ist wie Link dargestellt wird. Alles weisse im Code ist immer Text-->
     </div>.
   </header>
 
   <nav>
-    <!-- Es bezeichnet einen Bereich, in dem man mit Links zu anderen Hauptabschnitten der Webseite kommt. Bspw. Kontakt -->
-    <ul class="menu"> <!-- Eine ungeordnete Liste mit dem namen "menu" -->
+    <ul class="menu"> 
       <li><a class="aktiver_menuelink" href="index.html">Home</a></li>
-      <!-- Ein Element in der Liste, hier sind alle Verlinkungen -->
       <li><a href="infos.html">Infos</a>
       </li>
       <li><a href="ueber_uns.html">Über uns</a>
         <ul>
           <li class="dropdown"><a href="ueber_uns.html#partner">Partnerschaften</a></li>
-          <!-- sagt, dass man zuerst auf Über Uns damit man zu Partner kommt. Wird auf einen bestimmten Punkt bei der Seite navigiert. Dropdown ist ein neues ul. Unterliste in einer Liste -->
         </ul>
-      </li> <!-- jedes Li ist ein Listenitem resp. ein Navigationspunkt -->
+      </li> 
       <li><a href="aktuelles.html">Aktuelles</a>
       </li>
       <li><a href="contact.html">Kontakt</a></li>
@@ -100,17 +93,16 @@
 
 
 
-  <footer> <!-- Alles unten auf der Seite -->
-    <div class="footer-content"> <!-- Alles im Footer -->
-      <div class="footer-section"> <!-- Einzelne Sections Über uns, Nützliche Links und Kontakt -->
-        <h2>Über uns</h2> <!-- h = Überschrift -->
+  <footer> 
+    <div class="footer-content"> 
+      <div class="footer-section"> 
+        <h2>Über uns</h2> 
         <p>Trust Bärn ist eine Initiative zur Stärkung <br> der Gemeinschaft und Sicherheit in Bern.</p>
-        <!-- P = Paragraph, br ist ein Zeilenu, kein closing Element -->
       </div>
       <div class="footer-section">
         <h2>Nützliche Links</h2>
         <ul>
-          <li><a href="#">Impressum</a></li> <!-- Hastags bedeuttauf der gleichen Seite -->
+          <li><a href="#">Impressum</a></li> 
           <li><a href="#">Datenschutz</a></li>
           <li><a href="#">AGB</a></li>
         </ul>
@@ -121,8 +113,8 @@
         <p>Telefon: +41 31 123 45 67</p>
       </div>
     </div>
-    <div class="footer-bottom"> <!-- Ganz unten -->
-      <p>&copy; 2024 Trust Bärn. Alle Rechte vorbehalten.</p> <!-- Paragraph und das C(opyright)-->
+    <div class="footer-bottom"> 
+      <p>&copy; 2024 Trust Bärn. Alle Rechte vorbehalten.</p> 
     </div>
   </footer>
 
